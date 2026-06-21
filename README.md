@@ -12,6 +12,7 @@
 
 - **`data/onomatopoeia_dictionary.json`** — アプリ参照用（推奨。カテゴリ別に入れ子化）
 - **`data/onomatopoeia_dictionary.csv`** — 表計算・分析用（UTF-8 BOM付き、36列フラット）
+- **`data/troje_gait/`** — Nikolaus F. Troje (2002) 生体運動（歩行パターン）合成用データ＆数理モデル（詳細は [TROJE_GAIT.md](data/troje_gait/TROJE_GAIT.md)）
 - `archive/` — 旧版（v1: 12軸 / v2: 16軸）。参照用に保存。
 
 ## ベクトル構造（4カテゴリ + アクセント層）
