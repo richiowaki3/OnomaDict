@@ -27,7 +27,17 @@
 
 **EN:** x2 Time is the *attitude toward time* (sudden vs. sustained), not duration; ADSR is derived on the B side. x9 and x7 keep raw values alongside log10-normalized columns. x11 is ordinalized; x12 is converted sRGB→CIELAB (D65).
 
+### Category D：フレージング／拍節（x₁₃–x₁₆）
+エフォートの「時間への態度」（x₂）とは別系統の時間概念として、複数の動きのまとまり＝フレージング／拍節を独立カテゴリ D として新設。x₁₃ Accent（衝撃先行↔蓄勢後発）、x₁₄ Contour（加速↔減勢）、x₁₅ Meter（単発↔連続）、x₁₆ Regularity（規則↔ジッター）。各語を［始点・アクセント点・終点］の3点キーフレームに展開する時間レイヤーを与える。詳細な列定義は `data/SCHEMA.md`。
+
+### x₂ の純化と x₈ との分離
+x₂ Time は「時間への態度」（即決／時間に委ねる）という純粋なエフォート質に定義を限定し、音の物理的時間構造（ADSR）は Category B の x₈ に分離した。促音っ・長音ーは推定の手がかりだが定義そのものではない。
+
+### 認識論的レイヤリング（素朴物理学 vs 本物物理学）
+Category A（エフォート）は人が知覚・実演する運動の質＝素朴物理学（観察者依存の物理像）であり、Category B（音響測定）・C の Reynolds（口腔内空気の実流体力学）＝本物物理学とは認識論的身分が異なる。A と B/C を同一の物理軸として等価に距離計算しないこと。LMAの低信頼性（Bernardet et al. 2019）は、エフォートが素朴物理学＝観察者依存である本性の帰結として理解される。
+
 ---
+
 
 ## 3. パイプライン / Pipeline
 
@@ -69,7 +79,11 @@
 - **Composition = compositionality**: onomatopoeic compounding follows the same principle as compound verbs ("kumi-ageru" = scoop + raise). The pairing is not limited to sudden+sustained (kakkīn); it includes sudden+sudden (gatapishi = a door's repeated knocks) and juxtaposed simultaneous sounds (shūgō = air-cutting hiss + low engine roar). Whether the reality is sequential or simultaneous is not encoded in the word but decided by the referent (interpretation left open). The same compositional principle nests across levels: phoneme (kya = k+ya) → root reduplication (kirakira) → block concatenation (kakkīn). **Implementation rule: compounds are limited to two blocks (A+B); three or more (A+B+C) are not used.**
 - **Interpolation vs. extrapolation**: generated words are interpolations within the latent space, not extrapolations beyond it.
 
+### D軸の較正方針（現状と予定）
+D軸は現在、形態型からの一括ブートストラップ値で、離散に固着している。連続軸化のため、合成音エンベロープからの実測較正を行う：IOI変動係数→x₁₆、エネルギー時間重心→x₁₃、振幅トレンド→x₁₄、オンセット密度→x₁₅。単発語は形態priorを維持。x₁₆（拍の不規則さ）と x₉（媒質の粗さ）は独立（r=−0.16）。
+
 ---
+
 
 ## 5. 理論的参照 / Theoretical References
 
