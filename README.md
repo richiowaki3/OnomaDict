@@ -8,6 +8,16 @@
 > 手法・理論・パイプラインの詳細は [METHODOLOGY.md](METHODOLOGY.md)（日英併記）を参照。
 > See [METHODOLOGY.md](METHODOLOGY.md) for the full methodology, references, and pipeline (JP/EN).
 
+## 辞書の構造
+OnomaDict は日本語オノマトペ（擬音語・擬態語）を多次元ベクトルで記述する辞書。ベクトルは4系統で構成される：
+
+- **身体表現系（Category A）**：ラバン・エフォート（x₁–x₄）。動きの質。
+- **音楽音響系（Category B）**：発声気圧・音響物理（x₅–x₈）。耳に届く音の測定。
+- **オノマトペイメージ系（Category C）**：拡張感覚・現実物理・心理（x₉–x₁₂）。口腔内調音の流体計算（Reynolds 等）を音象徴イメージに結ぶ。照明系（色 x₁₂／CIELAB）は現状手薄。
+- **フレージング系（Category D）**：拍節・時間構造（x₁₃–x₁₆）。
+
+列定義は `data/SCHEMA.md`、参考文献は `REFERENCES.md`。データは 764語。
+
 ## 最新版ファイル
 
 - **`data/onomatopoeia_dictionary.json`** — アプリ参照用（推奨。カテゴリ別に入れ子化）
@@ -108,3 +118,7 @@ Dingemanse (2012), UniDic（国立国語研究所）.
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（クリエイティブ・コモンズ 表示 4.0 国際）。
 商用を含め誰でも自由に利用・改変・再配布できます。条件はクレジット表示（Richi Owaki および本辞書名）のみ。
 アクセント層はUniDic（国立国語研究所）を用いて付与。詳細はLICENSEファイル参照。
+
+### ライセンス・引用
+CC BY 4.0。利用時は本リポジトリを出典として明記してください。
+
