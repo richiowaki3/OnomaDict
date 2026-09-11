@@ -1,113 +1,97 @@
-# 未開拓オノマトペ辞書 (Unexplored Onomatopoeia Dictionary)
+# Unexplored Onomatopoeia Dictionary (JP & KR)
 
-物理・感覚・運動・リズム・アクセント・メタタグの多層ベクトルおよびビットフラグとして記述したオノマトペ辞書リポジトリ。
-**日本語版 (JP: 2,061語)** および **韓国語版 (KR: 166語)** を独立した言語辞서として提供しています。
+A cross-lingual multidimensional vector dictionary of Japanese (JP: 2,061 words) and Korean (KR: 1,184 words) onomatopoeia, formalized across physical, sensory, motion, rhythm, accent, and sound-symbolic metadata.
 
-身体表現・音響合成・モーション・色彩・自然言語処理など、任意のジャンルへ状態を変換するハブとして使うことを想定しています。
+Designed as a conversion hub across choreography, acoustic synthesis, computer graphics, motion design, lighting, and natural language processing.
 
-> 手法・理論・パイプラインの詳細は [METHODOLOGY.md](METHODOLOGY.md)（日英併記）を参照。
-> See [METHODOLOGY.md](METHODOLOGY.md) for the full methodology, references, and pipeline (JP/EN).
+> For theoretical methodology, references, and pipeline details, see [METHODOLOGY.md](METHODOLOGY.md).
 
 ---
 
-## 言語別ディレクトリ構成 (Language Datasets)
+## Multilingual Directory Structure
 
-日本語 (JP) と韓国語 (KR) は独立したディレクトリに整理されており、用途に合わせてそれぞれ**フルバージョン**と**データ圧縮バージョン**をご利用いただけます。
+The Japanese (JP) and Korean (KR) dictionaries are organized into independent directories. Both languages provide **Full Versions (with English meanings & descriptions)** and **Data-Compressed Versions (ultra-lightweight for real-time applications)**.
 
 `
 data/
-├── jp/  (日本語オノマトペ辞書 - 2,061語)
-│   ├── onomatopoeia_dictionary_jp.csv          ← フルバージョン (テキスト意味・解説・日本語分類名)
-│   ├── onomatopoeia_dictionary_jp.json         ← フルバージョン JSON
-│   ├── onomatopoeia_dictionary_jp_compact.csv  ← データ圧縮バージョン (ビットフラグ数値・軽量)
-│   └── onomatopoeia_dictionary_jp_compact.json ← データ圧縮バージョン JSON
-└── kr/  (韓国語オノマトペ辞서 - 166語)
-    ├── onomatopoeia_dictionary_kr.csv          ← フルバージョン (텍스트 의미・해설・日本語分類名)
-    ├── onomatopoeia_dictionary_kr.json         ← フルバージョン JSON
-    ├── onomatopoeia_dictionary_kr_compact.csv  ← 데이터 압축 버전 (비트플래그 수치・경량)
-    └── onomatopoeia_dictionary_kr_compact.json ← 데이터 압축 버전 JSON
+├── jp/  (Japanese Onomatopoeia Dictionary - 2,061 entries)
+│   ├── onomatopoeia_dictionary_jp.csv          ← Full Version (English meanings & category names)
+│   ├── onomatopoeia_dictionary_jp.json         ← Full Version JSON
+│   ├── onomatopoeia_dictionary_jp_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
+│   └── onomatopoeia_dictionary_jp_compact.json ← Data-Compressed Version JSON
+└── kr/  (Korean Onomatopoeia Dictionary - 1,184 entries)
+    ├── onomatopoeia_dictionary_kr.csv          ← Full Version (English meanings & category names)
+    ├── onomatopoeia_dictionary_kr.json         ← Full Version JSON
+    ├── onomatopoeia_dictionary_kr_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
+    └── onomatopoeia_dictionary_kr_compact.json ← Data-Compressed Version JSON
 `
 
 ---
 
-## 辞書バリエーションの説明
+## Dataset Variations
 
-各言語辞書には、以下の2種類のバリエーションが同梱されています：
+### 1. Full Version (onomatopoeia_dictionary_XX.csv / .json)
+- **Features**: Includes English definitions (meaning_en), English sound-symbolic rationales (
+ationale), Romanization (pronunciation_romaji), and English category names.
 
-### 1. フルバージョン (onomatopoeia_dictionary_XX.csv / .json)
-- **特徴**: 言葉の意味（meaning）およびベクトル配置の物理・感覚解説文（
-ationale）が含まれています。カテゴリー分類は直感的に理解しやすい日本語名称（テキスト表記）で格納されています。
-
-### 2. データ圧縮バージョン (onomatopoeia_dictionary_XX_compact.csv / .json)
-- **特徴**: アプリケーション通信やリアルタイム処理のために自然文テキスト（meaning, 
-ationale, lags）を完全除去。カテゴリー情報は**ビットフラグ（数値）**で格納されており、通信量を大幅削減するとともにビットAND演算 ((dom_bit & 1) != 0) によるミリ秒単位の高速フィルタリングに対応しています。
+### 2. Data-Compressed Version (onomatopoeia_dictionary_XX_compact.csv / .json)
+- **Features**: Removes natural language text (meaning_en, 
+ationale, lags) to minimize payload size (65-80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering ((dom_bit & 1) != 0).
 
 ---
 
-## ベクトル構造（4カテゴリ + アクセント層 + ビットフラグ）
+## Vector Schema (16 Axes + Accent + Metadata)
 
-### ビットフラグ・カテゴリ層 (Bitmask Metadata)
-- **cat_bit / category**: 古典5分類 (1:擬声語, 2:擬音語, 4:擬態語, 8:擬情語, 16:擬痛語 のビット和)
-- **dom_bit / domain**: 感覚・属性ドメイン (1:テクスチャー, 2:ダイナミクス, 4:温度, 8:スピード, 16:色光, 32:密集, 64:関係性, 128:静寂, 256:味, 512:質量, 1024:匂い, 2048:感情, 4096:気象自然, 8192:生き物, 16384:人体生理 のビット和)
-- **pol_code / polarity**: 感情価 (1:快, 2:不快, 0:中立)
-- **int_bit / intensity**: 音韻強度 (1:清音, 2:濁音, 4:半濁音 のビット和)
-- **	one_code / 	one**: 明暗スケール (1:明るい・軽い・小, 2:暗い・重い・大, 0:中立)
-- **morph_bit / morphology**: 形態パターン (1:畳語, 2:促音, 4:撥音, 8:「り」変化, 16:長音, 32:その他 のビット和)
+### Category Metadata
+- **Category (category / cat_bit)**: Phonomime (Voice: 1), Phenomime (Sound: 2), Psychomime (State/Manner: 4), Pathomime (Emotion: 8), Algomime (Pain: 16).
+- **Domain (domain / dom_bit)**: Texture (1), Dynamics (2), Temperature (4), Speed/Tempo (8), Color/Light (16), Density/Distance (32), Relationship (64), Silence (128), Taste (256), Mass/Weight (512), Smell (1024), Emotion (2048), Weather/Nature (4096), Living Beings (8192), Human Body/Physiology (16384).
+- **Polarity (polarity / pol_code)**: Positive (1), Negative (2), Neutral (0).
+- **Intensity (intensity / int_bit)**: Unvoiced/Light (1), Voiced/Heavy (2), Semi-voiced/Crisp (4).
+- **Tone (	one / 	one_code)**: Bright/Light/Small (1), Dark/Heavy/Large (2), Neutral (0).
+- **Morphology (morphology / morph_bit)**: Reduplication (1), Geminate (2), Moraic Nasal (4), -ri Ending (8), Long Vowel (16), Single/Other (32).
 
-### Category A: ラバン・エフォート（瞬間の動きの質）
-| キー | 内容 | 範囲 |
-|---|---|---|
-| effort.weight (x1) | 重さ 0:軽い↔9:重い | 0–9 |
-| effort.time (x2) | 時間への態度 0:持続的↔9:突発的（音の長さではない） | 0–9 |
-| effort.space (x3) | 空間 0:間接的↔9:直接的 | 0–9 |
-| effort.flow (x4) | 流れ 0:自由↔9:抑制 | 0–9 |
+### Category A: Laban Effort (Instantaneous Movement Quality)
+- effort.weight (x1): Weight (0: Light ↔ 9: Heavy)
+- effort.time (x2): Attitude toward Time (0: Sustained ↔ 9: Sudden)
+- effort.space (x3): Space (0: Indirect ↔ 9: Direct)
+- effort.flow (x4): Flow (0: Free ↔ 9: Bound/Inhibited)
 
-### Category B: 音響物理
-| キー | 内容 | 範囲 |
-|---|---|---|
-| acoustic.hardness (x5) | 硬度 0:剛体↔9:流体 | 0–9 |
-| acoustic.moisture (x6) | 湿度 0:乾燥↔9:飽和 | 0–9 |
-| acoustic.freq_hz (x7) | 周波数 生値 | 100–3500 Hz |
-| acoustic.freq_norm | x7のlog10正規화 | 0–9 |
-| acoustic.decay (x8) | 減衰 0:持続↔9:突発遮断 | 0–9 |
+### Category B: Acoustic Physics
+- coustic.hardness (x5): Hardness (0: Rigid ↔ 9: Fluid)
+- coustic.moisture (x6): Moisture (0: Dry ↔ 9: Saturated)
+- coustic.freq_hz (x7_hz): Acoustic Frequency (100–3500 Hz)
+- coustic.freq_norm (x7_norm): log10 Normalized Frequency (0–9)
+- coustic.decay (x8): Sound Decay (0: Sustained ↔ 9: Sudden Cutoff)
 
-### Category C: 拡張感覚・物理・心理
-| キー | 内容 | 範囲 |
-|---|---|---|
-| extended.reynolds (x9) | レイノルズ数 生値（層流↔乱流） | 100–20000 |
-| extended.reynolds_norm | x9のlog10正規化 | 0–9 |
-| extended.boyle (x10) | 圧縮性・気泡特性 | 0–9 |
-| extended.temp_code (x11) | 触知温度 | ccc,cc,c,mc,0,mh,h,hh,hhh |
-| extended.temp_ord | x11の序数 | 0–8 |
-| extended.color_hex (x12) | 色 sRGB HEX | — |
-| extended.lab | x12のCIELAB [L*,a*,b*] (D65) | — |
+### Category C: Extended Sensory & Fluid Dynamics
+- extended.reynolds (x9_re): Reynolds Number (100–20000)
+- extended.reynolds_norm (x9_norm): log10 Normalized Reynolds (0–9)
+- extended.boyle (x10): Boyle Number (0–9)
+- extended.temp_code (x11): Tactile Temperature (ccc, cc, c, mc, 0, mh, h, hh, hhh)
+- extended.temp_ord (x11_ord): Temperature Ordinal (0–8)
+- extended.color_hex (x12): sRGB Color HEX
+- extended.lab (L, a, b): CIELAB Color Coordinates (D65)
 
-### Category D: フレージング／拍節（複数の動きのまとまり）
-| キー | 内容 | 範囲 |
-|---|---|---|
-| phrasing.accent (x13) | アクセント 0:衝撃先行↔9:蓄勢後発 | 0–9 |
-| phrasing.contour (x14) | 推移 0:加速↔9:減勢 | 0–9 |
-| phrasing.meter (x15) | 拍 0:単発↔9:高頻度反復 | 0–9 |
-| phrasing.regularity (x16) | 規則性 0:規則的↔9:不規則ジッター | 0–9 |
+### Category D: Phrasing & Meter (Phrase Scale)
+- phrasing.accent (x13): Peak Timestamp (0: Impulse ↔ 9: Impact)
+- phrasing.contour (x14): Envelope Trend (0: Accelerating ↔ 9: Decelerating)
+- phrasing.meter (x15): Onset Density / Repetition (0: Single ↔ 9: High Density)
+- phrasing.regularity (x16): Rhythmic Jitter (0: Regular ↔ 9: Irregular)
 
 ---
 
-## Raw URL アクセス例
+## Raw URL Access
 
-### 日本語辞書 (JP - Japanese)
-`
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp.json
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact.json
-`
+### Japanese (JP: 2,061 entries)
+- Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp.json
+- Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact.json
 
-### 韓国語辞書 (KR - Korean)
-`
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact.json
-`
+### Korean (KR: 1,184 entries)
+- Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
+- Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact.json
 
 ---
 
-## ライセンス
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（クリエイティブ・コモンズ 表示 4.0 国際）。
-商用を含め誰でも自由に利用・改変・再配布できます。クレジット表示（Richi Owaki および本辞書名）をお願いいたします。
+## License
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (Creative Commons Attribution 4.0 International).
+Fell free to use, modify, and redistribute. Please credit Richi Owaki and Unexplored Onomatopoeia Dictionary.
