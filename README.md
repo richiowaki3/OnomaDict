@@ -1,7 +1,7 @@
 # 未開拓オノマトペ辞書 (Unexplored Onomatopoeia Dictionary)
 
-日本語オノマトペ 2,061語を、物理・感覚・運動・リズム・アクセント・メタタグの多層ベクトルおよびビットフラグとして記述した辞書。
-旧764語から1,297語を追加拡充し、全語彙に16次元コアベクトルおよびメタタグを採録しています。
+物理・感覚・運動・リズム・アクセント・メタタグの多層ベクトルおよびビットフラグとして記述したオノマトペ辞書リポジトリ。
+**日本語版 (JP: 2,061語)** および **韓国語版 (KR: 166語)** を独立した言語辞서として提供しています。
 
 身体表現・音響合成・モーション・色彩・自然言語処理など、任意のジャンルへ状態を変換するハブとして使うことを想定しています。
 
@@ -10,19 +10,35 @@
 
 ---
 
-## 辞書データの2つのバリエーション（同一データ内容）
+## 言語別ディレクトリ構成 (Language Datasets)
 
-本辞書は、用途に合わせて全内容が同一の**2種類のバリエーション（フルバージョン / データ圧縮バージョン）**を提供しています。
+日本語 (JP) と韓国語 (KR) は独立したディレクトリに整理されており、用途に合わせてそれぞれ**フルバージョン**と**データ圧縮バージョン**をご利用いただけます。
 
-### 1. フルバージョン（説明書きあり・人間参照および詳細分析用）
-- **data/onomatopoeia_dictionary.csv** (UTF-8, 36列)
-- **data/onomatopoeia_dictionary.json** (JSON構造化・整形済み)
+`
+data/
+├── jp/  (日本語オノマトペ辞書 - 2,061語)
+│   ├── onomatopoeia_dictionary_jp.csv          ← フルバージョン (テキスト意味・解説・日本語分類名)
+│   ├── onomatopoeia_dictionary_jp.json         ← フルバージョン JSON
+│   ├── onomatopoeia_dictionary_jp_compact.csv  ← データ圧縮バージョン (ビットフラグ数値・軽量)
+│   └── onomatopoeia_dictionary_jp_compact.json ← データ圧縮バージョン JSON
+└── kr/  (韓国語オノマトペ辞서 - 166語)
+    ├── onomatopoeia_dictionary_kr.csv          ← フルバージョン (텍스트 의미・해설・日本語分類名)
+    ├── onomatopoeia_dictionary_kr.json         ← フルバージョン JSON
+    ├── onomatopoeia_dictionary_kr_compact.csv  ← 데이터 압축 버전 (비트플래그 수치・경량)
+    └── onomatopoeia_dictionary_kr_compact.json ← 데이터 압축 버전 JSON
+`
+
+---
+
+## 辞書バリエーションの説明
+
+各言語辞書には、以下の2種類のバリエーションが同梱されています：
+
+### 1. フルバージョン (onomatopoeia_dictionary_XX.csv / .json)
 - **特徴**: 言葉の意味（meaning）およびベクトル配置の物理・感覚解説文（
 ationale）が含まれています。カテゴリー分類は直感的に理解しやすい日本語名称（テキスト表記）で格納されています。
 
-### 2. データ圧縮バージョン（説明書きなし・アプリ高速通信およびビット演算用）
-- **data/onomatopoeia_dictionary_compact.csv** (UTF-8, 31列, 約67%軽量化)
-- **data/onomatopoeia_dictionary_compact.json** (ミニファイ圧縮, 約79%軽量化)
+### 2. データ圧縮バージョン (onomatopoeia_dictionary_XX_compact.csv / .json)
 - **特徴**: アプリケーション通信やリアルタイム処理のために自然文テキスト（meaning, 
 ationale, lags）を完全除去。カテゴリー情報は**ビットフラグ（数値）**で格納されており、通信量を大幅削減するとともにビットAND演算 ((dom_bit & 1) != 0) によるミリ秒単位の高速フィルタリングに対応しています。
 
@@ -52,7 +68,7 @@ ationale, lags）を完全除去。カテゴリー情報は**ビットフラグ
 | acoustic.hardness (x5) | 硬度 0:剛体↔9:流体 | 0–9 |
 | acoustic.moisture (x6) | 湿度 0:乾燥↔9:飽和 | 0–9 |
 | acoustic.freq_hz (x7) | 周波数 生値 | 100–3500 Hz |
-| acoustic.freq_norm | x7のlog10正規化 | 0–9 |
+| acoustic.freq_norm | x7のlog10正規화 | 0–9 |
 | acoustic.decay (x8) | 減衰 0:持続↔9:突発遮断 | 0–9 |
 
 ### Category C: 拡張感覚・物理・心理
@@ -76,14 +92,18 @@ ationale, lags）を完全除去。カテゴリー情報は**ビットフラグ
 
 ---
 
-## アプリからの参照例
+## Raw URL アクセス例
 
+### 日本語辞書 (JP - Japanese)
 `
-# フルバージョン (JSON)
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/onomatopoeia_dictionary.json
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp.json
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact.json
+`
 
-# データ圧縮バージョン (Compact JSON)
-https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/onomatopoeia_dictionary_compact.json
+### 韓国語辞書 (KR - Korean)
+`
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact.json
 `
 
 ---
