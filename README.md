@@ -10,20 +10,22 @@ Designed as a conversion hub across choreography, acoustic synthesis, computer g
 
 ## Multilingual Directory Structure
 
-The Japanese (JP) and Korean (KR) dictionaries are organized into independent directories. Both languages provide **Full Versions (with English meanings & descriptions)** and **Data-Compressed Versions (ultra-lightweight for real-time applications)**.
+The Japanese (JP) and Korean (KR) dictionaries are organized into independent directories. Both languages provide **Full Versions (with English meanings & descriptions)** and two **Data-Compressed Versions (ultra-lightweight for real-time applications and AI reasoning)**.
 
 ```
 data/
 ├── jp/  (Japanese Onomatopoeia Dictionary - 2,061 entries)
-│   ├── onomatopoeia_dictionary_jp.csv          ← Full Version (English meanings & category names)
-│   ├── onomatopoeia_dictionary_jp.json         ← Full Version JSON
-│   ├── onomatopoeia_dictionary_jp_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
-│   └── onomatopoeia_dictionary_jp_compact.json ← Data-Compressed Version JSON
+│   ├── onomatopoeia_dictionary_jp.csv           ← Full Version (English meanings & category names)
+│   ├── onomatopoeia_dictionary_jp.json          ← Full Version JSON
+│   ├── onomatopoeia_dictionary_jp_compact.csv   ← Data-Compressed Version CSV (Bitmask numbers)
+│   ├── onomatopoeia_dictionary_jp_compact1.json ← Data-Compressed Version JSON 1 (Numeric bitmasks)
+│   └── onomatopoeia_dictionary_jp_compact2.json ← Data-Compressed Version JSON 2 (Seed & Delta Modifiers)
 └── kr/  (Korean Onomatopoeia Dictionary - 5,050 entries)
-    ├── onomatopoeia_dictionary_kr.csv          ← Full Version (English meanings & category names)
-    ├── onomatopoeia_dictionary_kr.json         ← Full Version JSON
-    ├── onomatopoeia_dictionary_kr_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
-    └── onomatopoeia_dictionary_kr_compact.json ← Data-Compressed Version JSON
+    ├── onomatopoeia_dictionary_kr.csv           ← Full Version (English meanings & category names)
+    ├── onomatopoeia_dictionary_kr.json          ← Full Version JSON
+    ├── onomatopoeia_dictionary_kr_compact.csv   ← Data-Compressed Version CSV (Bitmask numbers)
+    ├── onomatopoeia_dictionary_kr_compact1.json ← Data-Compressed Version JSON 1 (Numeric bitmasks)
+    └── onomatopoeia_dictionary_kr_compact2.json ← Data-Compressed Version JSON 2 (Seed & Delta Modifiers)
 ```
 
 ---
@@ -31,10 +33,13 @@ data/
 ## Dataset Variations
 
 ### 1. Full Version (onomatopoeia_dictionary_XX.csv / .json)
-- **Features**: Includes English definitions (meaning_en), English sound-symbolic rationales (rationale), Romanization (pronunciation_romaji), and English category names.
+- **Features**: Includes English definitions (`meaning_en`), English sound-symbolic rationales (`rationale`), Romanization (`pronunciation_romaji`), and English category names.
 
-### 2. Data-Compressed Version (onomatopoeia_dictionary_XX_compact.csv / .json)
-- **Features**: Removes natural language text (meaning_en, rationale, flags) to minimize payload size (65-80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering (`(dom_bit & 1) != 0`).
+### 2. Data-Compressed Version 1 (onomatopoeia_dictionary_XX_compact1.json / .csv)
+- **Features**: Removes natural language text (`meaning_en`, `rationale`, `flags`) to minimize payload size (65–80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering (`(dom_bit & 1) != 0`).
+
+### 3. Seed-Compressed Version 2 (onomatopoeia_dictionary_XX_compact2.json)
+- **Features**: Decomposes words into core sound-symbolic **Seeds (語根)** and **Delta Modifiers** (consonant shifts, vowel tone shifts, morphological templates). Allows AI engines and client runtimes to reconstruct 16D vectors programmatically with maximum token efficiency.
 
 ---
 
@@ -83,11 +88,13 @@ data/
 
 ### Japanese (JP: 2,061 entries)
 - Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp.json
-- Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact.json
+- Compact JSON 1 (Numeric Bitmasks): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact1.json
+- Compact JSON 2 (Seed Compression): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact2.json
 
 ### Korean (KR: 5,050 entries)
 - Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
-- Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact.json
+- Compact JSON 1 (Numeric Bitmasks): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact1.json
+- Compact JSON 2 (Seed Compression): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact2.json
 
 ---
 
