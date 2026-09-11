@@ -1,6 +1,6 @@
-# Unexplored Onomatopoeia Dictionary (JP & KR)
+# Unexplored Onomatopoeia & Ideophone Dictionary (JP, KR, AF)
 
-A cross-lingual multidimensional vector dictionary of Japanese (JP: 2,061 words) and Korean (KR: 5,050 words) onomatopoeia, formalized across physical, sensory, motion, rhythm, accent, and sound-symbolic metadata.
+A cross-lingual multidimensional vector dictionary of Japanese (JP: 2,061 words), Korean (KR: 5,050 words), and African Ideophones (AF: 245 words across 9 languages including Swahili, Hausa, Zulu, Gbaya, Emai, Ewe, Siwu, Shona, and Yoruba), formalized across physical, sensory, motion, rhythm, accent, and sound-symbolic metadata.
 
 Designed as a conversion hub across choreography, acoustic synthesis, computer graphics, motion design, lighting, and natural language processing.
 
@@ -10,7 +10,7 @@ Designed as a conversion hub across choreography, acoustic synthesis, computer g
 
 ## Multilingual Directory Structure
 
-The Japanese (JP) and Korean (KR) dictionaries are organized into independent directories. Both languages provide **Full Versions (with English meanings & descriptions)** and two **Data-Compressed Versions (ultra-lightweight for real-time applications and AI reasoning)**.
+The Japanese (JP), Korean (KR), and African Ideophone (AF) dictionaries are organized into independent directories. All languages provide **Full Versions (with English meanings & descriptions)** and **Data-Compressed Versions (ultra-lightweight for real-time applications and AI reasoning)**.
 
 ```
 data/
@@ -20,12 +20,18 @@ data/
 │   ├── onomatopoeia_dictionary_jp_compact.csv   ← Data-Compressed Version CSV (Bitmask numbers)
 │   ├── onomatopoeia_dictionary_jp_compact1.json ← Data-Compressed Version JSON 1 (Numeric bitmasks)
 │   └── onomatopoeia_dictionary_jp_compact2.json ← Data-Compressed Version JSON 2 (Seed & Delta Modifiers)
-└── kr/  (Korean Onomatopoeia Dictionary - 5,050 entries)
-    ├── onomatopoeia_dictionary_kr.csv           ← Full Version (English meanings & category names)
-    ├── onomatopoeia_dictionary_kr.json          ← Full Version JSON
-    ├── onomatopoeia_dictionary_kr_compact.csv   ← Data-Compressed Version CSV (Bitmask numbers)
-    ├── onomatopoeia_dictionary_kr_compact1.json ← Data-Compressed Version JSON 1 (Numeric bitmasks)
-    └── onomatopoeia_dictionary_kr_compact2.json ← Data-Compressed Version JSON 2 (Seed & Delta Modifiers)
+├── kr/  (Korean Onomatopoeia Dictionary - 5,050 entries)
+│   ├── onomatopoeia_dictionary_kr.csv           ← Full Version (English meanings & category names)
+│   ├── onomatopoeia_dictionary_kr.json          ← Full Version JSON
+│   ├── onomatopoeia_dictionary_kr_compact.csv   ← Data-Compressed Version CSV (Bitmask numbers)
+│   ├── onomatopoeia_dictionary_kr_compact1.json ← Data-Compressed Version JSON 1 (Numeric bitmasks)
+│   └── onomatopoeia_dictionary_kr_compact2.json ← Data-Compressed Version JSON 2 (Seed & Delta Modifiers)
+└── af/  (African Ideophones Dictionary - 245 entries, 9 African languages)
+    ├── onomatopoeia_dictionary_af.csv           ← Full Version (English meanings & phonetic rules)
+    ├── onomatopoeia_dictionary_af.json          ← Full Version JSON
+    ├── onomatopoeia_dictionary_af_compact.csv   ← Data-Compressed Version CSV
+    ├── onomatopoeia_dictionary_af_compact1.json ← Data-Compressed Version JSON 1 (Numeric/Minimal)
+    └── onomatopoeia_dictionary_af_compact2.json ← Data-Compressed Version JSON 2 (Seed & Base Vectors)
 ```
 
 ---
@@ -33,10 +39,10 @@ data/
 ## Dataset Variations
 
 ### 1. Full Version (onomatopoeia_dictionary_XX.csv / .json)
-- **Features**: Includes English definitions (`meaning_en`), English sound-symbolic rationales (`rationale`), Romanization (`pronunciation_romaji`), and English category names.
+- **Features**: Includes English definitions (`meaning_en`), English sound-symbolic rationales (`rationale`), Romanization / pronunciation, tone patterns, and category names.
 
 ### 2. Data-Compressed Version 1 (onomatopoeia_dictionary_XX_compact1.json / .csv)
-- **Features**: Removes natural language text (`meaning_en`, `rationale`, `flags`) to minimize payload size (65–80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering (`(dom_bit & 1) != 0`).
+- **Features**: Removes natural language text (`meaning_en`, `rationale`, `flags`) to minimize payload size (65–80% size reduction). Category metadata is represented as **numeric bitmasks** or compact codes for millisecond-level filtering.
 
 ### 3. Seed-Compressed Version 2 (onomatopoeia_dictionary_XX_compact2.json)
 - **Features**: Decomposes words into core sound-symbolic **Seeds (語根)** and **Delta Modifiers** (consonant shifts, vowel tone shifts, morphological templates). Allows AI engines and client runtimes to reconstruct 16D vectors programmatically with maximum token efficiency.
@@ -63,24 +69,24 @@ data/
 ### Category B: Acoustic Physics
 - acoustic.hardness (x5): Hardness (0: Rigid ↔ 9: Fluid)
 - acoustic.moisture (x6): Moisture (0: Dry ↔ 9: Saturated)
-- acoustic.freq_hz (x7_hz): Acoustic Frequency (100–3500 Hz)
-- acoustic.freq_norm (x7_norm): log10 Normalized Frequency (0–9)
+- acoustic.freq_hz (x7_hz): Acoustic Frequency (100–3500 Hz / African Tone scaling)
+- acoustic.freq_norm (x7_norm): log10 / linear Normalized Frequency (0–1 or 0–9)
 - acoustic.decay (x8): Sound Decay (0: Sustained ↔ 9: Sudden Cutoff)
 
 ### Category C: Extended Sensory & Fluid Dynamics
-- extended.reynolds (x9_re): Reynolds Number (100–20000)
-- extended.reynolds_norm (x9_norm): log10 Normalized Reynolds (0–9)
-- extended.boyle (x10): Boyle Number (0–9)
-- extended.temp_code (x11): Tactile Temperature (ccc, cc, c, mc, 0, mh, h, hh, hhh)
-- extended.temp_ord (x11_ord): Temperature Ordinal (0–8)
+- extended.reynolds (x9_re): Reynolds Number (100–20000) / Period
+- extended.reynolds_norm (x9_norm): Normalized Reynolds / Period (0–1 or 0–9)
+- extended.boyle (x10): Boyle Number / Arousal Intensity (0–1 or 0–9)
+- extended.temp_code (x11): Tactile Temperature / Impact Hardness
+- extended.temp_ord (x11_ord): Temperature / Hardness Grade (1–5)
 - extended.color_hex (x12): sRGB Color HEX
 - extended.lab (L, a, b): CIELAB Color Coordinates (D65)
 
 ### Category D: Phrasing & Meter (Phrase Scale)
-- phrasing.accent (x13): Peak Timestamp (0: Impulse ↔ 9: Impact)
-- phrasing.contour (x14): Envelope Trend (0: Accelerating ↔ 9: Decelerating)
-- phrasing.meter (x15): Onset Density / Repetition (0: Single ↔ 9: High Density)
-- phrasing.regularity (x16): Rhythmic Jitter (0: Regular ↔ 9: Irregular)
+- phrasing.accent (x13): Peak Timestamp / Tone Pattern Code (0: Monotone Low, 1: High, 2: Falling, 3: Rising, 4: Complex)
+- phrasing.contour (x14): Envelope Trend / Frequency Contour Slope
+- phrasing.meter (x15): Onset Density / Metric Regularity
+- phrasing.regularity (x16): Rhythmic / Tactile Surface Regularity
 
 ---
 
@@ -95,6 +101,11 @@ data/
 - Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
 - Compact JSON 1 (Numeric Bitmasks): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact1.json
 - Compact JSON 2 (Seed Compression): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact2.json
+
+### African Ideophones (AF: 245 entries, 9 Languages)
+- Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/af/onomatopoeia_dictionary_af.json
+- Compact JSON 1 (Minimal Vector): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/af/onomatopoeia_dictionary_af_compact1.json
+- Compact JSON 2 (Seed Compression): https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/af/onomatopoeia_dictionary_af_compact2.json
 
 ---
 

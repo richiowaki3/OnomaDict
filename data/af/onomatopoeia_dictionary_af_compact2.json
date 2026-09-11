@@ -1,0 +1,5884 @@
+{
+  "compression_spec": {
+    "engine": "OnomaDict African Ideophone Seed Compression AI",
+    "language": "African Ideophones (9 Languages)",
+    "word_count": 245,
+    "unique_seed_count": 183,
+    "compression_ratio": "1.34x"
+  },
+  "seeds_master": [
+    {
+      "seed_id": "af_seed_0001",
+      "seed_word": "tititi",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0002",
+      "seed_word": "pepepe",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0003",
+      "seed_word": "fofofo",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0004",
+      "seed_word": "pwepwepwe",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0005",
+      "seed_word": "ng'o",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0006",
+      "seed_word": "ng'oka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0007",
+      "seed_word": "keche",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "seed_id": "af_seed_0008",
+      "seed_word": "kecheka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0009",
+      "seed_word": "kechekeche",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0010",
+      "seed_word": "tubwi",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0011",
+      "seed_word": "tubwika",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0012",
+      "seed_word": "pukutiku",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0013",
+      "seed_word": "mwaa",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0014",
+      "seed_word": "mwaaka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0015",
+      "seed_word": "fyuu",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0016",
+      "seed_word": "fyuuka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0017",
+      "seed_word": "jiu",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0018",
+      "seed_word": "jiuka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0019",
+      "seed_word": "gudugudu",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0020",
+      "seed_word": "kacha",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0021",
+      "seed_word": "kachaka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0022",
+      "seed_word": "chala",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0023",
+      "seed_word": "chalaka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0024",
+      "seed_word": "pwa",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0025",
+      "seed_word": "pwaka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0026",
+      "seed_word": "tifu",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0027",
+      "seed_word": "tifuka",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0028",
+      "seed_word": "kiri",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0029",
+      "seed_word": "kirika",
+      "language": "Swahili",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0030",
+      "seed_word": "wur",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0031",
+      "seed_word": "wurnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0032",
+      "seed_word": "fat",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0033",
+      "seed_word": "fatnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0034",
+      "seed_word": "kirin",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0035",
+      "seed_word": "kirinnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0036",
+      "seed_word": "rus",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.85,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0037",
+      "seed_word": "rusnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0038",
+      "seed_word": "tsikirin",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0039",
+      "seed_word": "gum",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0040",
+      "seed_word": "gumnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0041",
+      "seed_word": "kal",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0042",
+      "seed_word": "kalnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0043",
+      "seed_word": "sol",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0044",
+      "seed_word": "solnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0045",
+      "seed_word": "fak",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0046",
+      "seed_word": "faknci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0047",
+      "seed_word": "kwas",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0048",
+      "seed_word": "kwasnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0049",
+      "seed_word": "bam",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0050",
+      "seed_word": "bamnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0051",
+      "seed_word": "tumm",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0052",
+      "seed_word": "tummnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0053",
+      "seed_word": "murus",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0054",
+      "seed_word": "murusnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0055",
+      "seed_word": "farafara",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0056",
+      "seed_word": "babbaka",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0057",
+      "seed_word": "tas",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0058",
+      "seed_word": "tasnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0059",
+      "seed_word": "dum",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0060",
+      "seed_word": "dumnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0061",
+      "seed_word": "kats",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0062",
+      "seed_word": "katsnci",
+      "language": "Hausa",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0063",
+      "seed_word": "tshu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0064",
+      "seed_word": "tshuka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0065",
+      "seed_word": "gebhu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0066",
+      "seed_word": "gebhuka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0067",
+      "seed_word": "nce",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0068",
+      "seed_word": "nceka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0069",
+      "seed_word": "tshoko",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0070",
+      "seed_word": "zwakaha",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0071",
+      "seed_word": "du",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0072",
+      "seed_word": "duka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0073",
+      "seed_word": "bhuxe",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0074",
+      "seed_word": "bhuxeka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0075",
+      "seed_word": "gwada",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0076",
+      "seed_word": "gwadaka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0077",
+      "seed_word": "khahlamba",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0078",
+      "seed_word": "mbo",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0079",
+      "seed_word": "mboka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0080",
+      "seed_word": "phu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0081",
+      "seed_word": "phuka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0082",
+      "seed_word": "klwa",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0083",
+      "seed_word": "klwaka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0084",
+      "seed_word": "vhahla",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0085",
+      "seed_word": "chifi",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "seed_id": "af_seed_0086",
+      "seed_word": "chifika",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0087",
+      "seed_word": "klebu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0088",
+      "seed_word": "klebuka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0089",
+      "seed_word": "bhu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0090",
+      "seed_word": "bhuka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0091",
+      "seed_word": "cwe",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0092",
+      "seed_word": "cweka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0093",
+      "seed_word": "dlu",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0094",
+      "seed_word": "dluka",
+      "language": "Zulu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0095",
+      "seed_word": "soi",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0096",
+      "seed_word": "gbagara",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.5,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "seed_id": "af_seed_0097",
+      "seed_word": "bulu",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0098",
+      "seed_word": "kpuk",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.5,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0099",
+      "seed_word": "tek",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0100",
+      "seed_word": "gidi",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0101",
+      "seed_word": "yee",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0102",
+      "seed_word": "kpang",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0103",
+      "seed_word": "kpangnci",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0104",
+      "seed_word": "fio",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0105",
+      "seed_word": "dir",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0106",
+      "seed_word": "puk",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0107",
+      "seed_word": "ngau",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0108",
+      "seed_word": "deng",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0109",
+      "seed_word": "kor",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0110",
+      "seed_word": "zu",
+      "language": "Gbaya",
+      "base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.15,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0111",
+      "seed_word": "kpeee",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0112",
+      "seed_word": "khai",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0113",
+      "seed_word": "khainci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0114",
+      "seed_word": "gbam",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0115",
+      "seed_word": "gbamnci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0116",
+      "seed_word": "kpiti",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0117",
+      "seed_word": "vungbe",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0118",
+      "seed_word": "fii",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0119",
+      "seed_word": "fiinci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0120",
+      "seed_word": "ghoo",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0121",
+      "seed_word": "ghoonci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0122",
+      "seed_word": "titi",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0123",
+      "seed_word": "kpaa",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0124",
+      "seed_word": "kpaanci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0125",
+      "seed_word": "nyen",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0126",
+      "seed_word": "kpe",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0127",
+      "seed_word": "zaa",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0128",
+      "seed_word": "zaanci",
+      "language": "Emai",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0129",
+      "seed_word": "yibx",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0130",
+      "seed_word": "yibxnci",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0131",
+      "seed_word": "zoŋ",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0132",
+      "seed_word": "kplakpla",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0133",
+      "seed_word": "bɔbɔbɔ",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0134",
+      "seed_word": "syasyasya",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0135",
+      "seed_word": "gliii",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0136",
+      "seed_word": "dzẽe",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0137",
+      "seed_word": "dzẽenci",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0138",
+      "seed_word": "kpooo",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.15,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "seed_id": "af_seed_0139",
+      "seed_word": "kpooonci",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0140",
+      "seed_word": "tsatsatsa",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0141",
+      "seed_word": "feee",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0142",
+      "seed_word": "vuvu",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0143",
+      "seed_word": "vuvunci",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0144",
+      "seed_word": "kpakpa",
+      "language": "Ewe",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0145",
+      "seed_word": "c'onc'on",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0146",
+      "seed_word": "ulakpulak",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0147",
+      "seed_word": "colcol",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0148",
+      "seed_word": "kpɔrikpɔri",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0149",
+      "seed_word": "nyimi",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0150",
+      "seed_word": "kpɔtɔkpɔtɔ",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0151",
+      "seed_word": "kpikpi",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0152",
+      "seed_word": "fɔfɔfɔ",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0153",
+      "seed_word": "kporo",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0154",
+      "seed_word": "dzidzidzi",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0155",
+      "seed_word": "sɛsɛsɛ",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0156",
+      "seed_word": "kpukpu",
+      "language": "Siwu",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0157",
+      "seed_word": "dzveng",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0158",
+      "seed_word": "nyik",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0159",
+      "seed_word": "nyikka",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0160",
+      "seed_word": "pata",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0161",
+      "seed_word": "pindilili",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0162",
+      "seed_word": "tsvukuru",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0163",
+      "seed_word": "mbee",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0164",
+      "seed_word": "zii",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0165",
+      "seed_word": "ziika",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0166",
+      "seed_word": "ribi",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0167",
+      "seed_word": "ribika",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0168",
+      "seed_word": "chachacha",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.85,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0169",
+      "seed_word": "kobvo",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0170",
+      "seed_word": "kobvoka",
+      "language": "Shona",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0171",
+      "seed_word": "timutimutiku",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0172",
+      "seed_word": "bambariba",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0173",
+      "seed_word": "yomuyomu",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "seed_id": "af_seed_0174",
+      "seed_word": "fian",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0175",
+      "seed_word": "girigiri",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0176",
+      "seed_word": "radarada",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0177",
+      "seed_word": "san",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0178",
+      "seed_word": "patapata",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0179",
+      "seed_word": "felefele",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0180",
+      "seed_word": "gbosa",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0181",
+      "seed_word": "gbosanci",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "seed_id": "af_seed_0182",
+      "seed_word": "kia",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "seed_id": "af_seed_0183",
+      "seed_word": "rederede",
+      "language": "Yoruba",
+      "base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    }
+  ],
+  "words_mapping": [
+    {
+      "original_word": "tititi",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0001",
+      "seed_word": "tititi",
+      "meaning_en": "Underscoring extreme blackness; coal black",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pepepe",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0002",
+      "seed_word": "pepepe",
+      "meaning_en": "Underscoring extreme whiteness; dazzling white",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fofofo",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0003",
+      "seed_word": "fofofo",
+      "meaning_en": "Deeply, soundly, fast asleep (asleep beyond disturbance)",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "pwepwepwe",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0004",
+      "seed_word": "pwepwepwe",
+      "meaning_en": "Trembling uncontrollably or shaking with fear",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ng'o",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0005",
+      "seed_word": "ng'o",
+      "meaning_en": "Absolute refusal; not giving even a bit",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ng'o-ng'o",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0005",
+      "seed_word": "ng'o",
+      "meaning_en": "Intensified or continuous aspect of ng'o: absolute refusal; not giving even a bit",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ng'oka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0006",
+      "seed_word": "ng'oka",
+      "meaning_en": "Stative verb derived from ideophone root ng'o",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "keche",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0007",
+      "seed_word": "keche",
+      "meaning_en": "Sound of something snapping or breaking cleanly",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "keche-keche",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0007",
+      "seed_word": "keche",
+      "meaning_en": "Intensified or continuous aspect of keche: sound of something snapping or breaking cleanly",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "kecheka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0008",
+      "seed_word": "kecheka",
+      "meaning_en": "Stative verb derived from ideophone root keche",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kechekeche",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0009",
+      "seed_word": "kechekeche",
+      "meaning_en": "Sound of complete fragmentation or rattling break",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "tubwi",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0010",
+      "seed_word": "tubwi",
+      "meaning_en": "Plunging heavy sound into water; sudden splash",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tubwi-tubwi",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0010",
+      "seed_word": "tubwi",
+      "meaning_en": "Intensified or continuous aspect of tubwi: plunging heavy sound into water; sudden splash",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tubwika",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0011",
+      "seed_word": "tubwika",
+      "meaning_en": "Stative verb derived from ideophone root tubwi",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pukutiku",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0012",
+      "seed_word": "pukutiku",
+      "meaning_en": "Leaves or fruits dropping abundantly all at once",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mwaa",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0013",
+      "seed_word": "mwaa",
+      "meaning_en": "Spreading far and wide or overflowing completely",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mwaa-mwaa",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0013",
+      "seed_word": "mwaa",
+      "meaning_en": "Intensified or continuous aspect of mwaa: spreading far and wide or overflowing completely",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mwaaka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0014",
+      "seed_word": "mwaaka",
+      "meaning_en": "Stative verb derived from ideophone root mwaa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fyuu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0015",
+      "seed_word": "fyuu",
+      "meaning_en": "Whistling past rapidly; swift darting motion",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fyuu-fyuu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0015",
+      "seed_word": "fyuu",
+      "meaning_en": "Intensified or continuous aspect of fyuu: whistling past rapidly; swift darting motion",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fyuuka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0016",
+      "seed_word": "fyuuka",
+      "meaning_en": "Stative verb derived from ideophone root fyuu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "jiu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0017",
+      "seed_word": "jiu",
+      "meaning_en": "Absolute dead silence in a space",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "jiu-jiu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0017",
+      "seed_word": "jiu",
+      "meaning_en": "Intensified or continuous aspect of jiu: absolute dead silence in a space",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "jiuka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0018",
+      "seed_word": "jiuka",
+      "meaning_en": "Stative verb derived from ideophone root jiu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gudugudu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0019",
+      "seed_word": "gudugudu",
+      "meaning_en": "Rumbling heavy vibration of a vehicle or thunder",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kacha",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0020",
+      "seed_word": "kacha",
+      "meaning_en": "Dry rustling of dry leaves or paper",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kacha-kacha",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0020",
+      "seed_word": "kacha",
+      "meaning_en": "Intensified or continuous aspect of kacha: dry rustling of dry leaves or paper",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kachaka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0021",
+      "seed_word": "kachaka",
+      "meaning_en": "Stative verb derived from ideophone root kacha",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "chala",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0022",
+      "seed_word": "chala",
+      "meaning_en": "Lying helplessly flat on one's back",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "chala-chala",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0022",
+      "seed_word": "chala",
+      "meaning_en": "Intensified or continuous aspect of chala: lying helplessly flat on one's back",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "chalaka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0023",
+      "seed_word": "chalaka",
+      "meaning_en": "Stative verb derived from ideophone root chala",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pwa",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0024",
+      "seed_word": "pwa",
+      "meaning_en": "Slapping sound or wet water splashing",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pwa-pwa",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0024",
+      "seed_word": "pwa",
+      "meaning_en": "Intensified or continuous aspect of pwa: slapping sound or wet water splashing",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pwaka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0025",
+      "seed_word": "pwaka",
+      "meaning_en": "Stative verb derived from ideophone root pwa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tifu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0026",
+      "seed_word": "tifu",
+      "meaning_en": "Rising dust cloud in an instant",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tifu-tifu",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0026",
+      "seed_word": "tifu",
+      "meaning_en": "Intensified or continuous aspect of tifu: rising dust cloud in an instant",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tifuka",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0027",
+      "seed_word": "tifuka",
+      "meaning_en": "Stative verb derived from ideophone root tifu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kiri",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0028",
+      "seed_word": "kiri",
+      "meaning_en": "Turning around rapidly on heel",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kiri-kiri",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0028",
+      "seed_word": "kiri",
+      "meaning_en": "Intensified or continuous aspect of kiri: turning around rapidly on heel",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kirika",
+      "language": "Swahili",
+      "lang_code": "sw",
+      "seed_id": "af_seed_0029",
+      "seed_word": "kirika",
+      "meaning_en": "Stative verb derived from ideophone root kiri",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "wur",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0030",
+      "seed_word": "wur",
+      "meaning_en": "Intense, vivid crimson red; blood-red",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "wur-wur",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0030",
+      "seed_word": "wur",
+      "meaning_en": "Intensified or continuous aspect of wur: intense, vivid crimson red; blood-red",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "wurnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0031",
+      "seed_word": "wurnci",
+      "meaning_en": "Abstract state/quality associated with wur",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fat",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0032",
+      "seed_word": "fat",
+      "meaning_en": "Flawless, spotless pure white",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fat-fat",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0032",
+      "seed_word": "fat",
+      "meaning_en": "Intensified or continuous aspect of fat: flawless, spotless pure white",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fatnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0033",
+      "seed_word": "fatnci",
+      "meaning_en": "Abstract state/quality associated with fat",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kirin",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0034",
+      "seed_word": "kirin",
+      "meaning_en": "Pitch black, impenetrable darkness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kirin-kirin",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0034",
+      "seed_word": "kirin",
+      "meaning_en": "Intensified or continuous aspect of kirin: pitch black, impenetrable darkness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kirinnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0035",
+      "seed_word": "kirinnci",
+      "meaning_en": "Abstract state/quality associated with kirin",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "rus",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0036",
+      "seed_word": "rus",
+      "meaning_en": "Bright, vivid yellow or gold",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.85,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "rus-rus",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0036",
+      "seed_word": "rus",
+      "meaning_en": "Intensified or continuous aspect of rus: bright, vivid yellow or gold",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.85,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "rusnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0037",
+      "seed_word": "rusnci",
+      "meaning_en": "Abstract state/quality associated with rus",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tsikirin",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0038",
+      "seed_word": "tsikirin",
+      "meaning_en": "Extremely tiny, minuscule dot or object",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gum",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0039",
+      "seed_word": "gum",
+      "meaning_en": "Tight, sealed closure; absolute silence",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gum-gum",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0039",
+      "seed_word": "gum",
+      "meaning_en": "Intensified or continuous aspect of gum: tight, sealed closure; absolute silence",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gumnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0040",
+      "seed_word": "gumnci",
+      "meaning_en": "Abstract state/quality associated with gum",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kal",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0041",
+      "seed_word": "kal",
+      "meaning_en": "Sparkling clean, thoroughly washed and bright",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "kal-kal",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0041",
+      "seed_word": "kal",
+      "meaning_en": "Intensified or continuous aspect of kal: sparkling clean, thoroughly washed and bright",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "kalnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0042",
+      "seed_word": "kalnci",
+      "meaning_en": "Abstract state/quality associated with kal",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "sol",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0043",
+      "seed_word": "sol",
+      "meaning_en": "Smooth and immaculate surface without blemish",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "sol-sol",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0043",
+      "seed_word": "sol",
+      "meaning_en": "Intensified or continuous aspect of sol: smooth and immaculate surface without blemish",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "solnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0044",
+      "seed_word": "solnci",
+      "meaning_en": "Abstract state/quality associated with sol",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fak",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0045",
+      "seed_word": "fak",
+      "meaning_en": "Sudden complete cessation of movement; stopping dead",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fak-fak",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0045",
+      "seed_word": "fak",
+      "meaning_en": "Intensified or continuous aspect of fak: sudden complete cessation of movement; stopping dead",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "faknci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0046",
+      "seed_word": "faknci",
+      "meaning_en": "Abstract state/quality associated with fak",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kwas",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0047",
+      "seed_word": "kwas",
+      "meaning_en": "Crunching or cracking a dry bone/stick",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kwas-kwas",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0047",
+      "seed_word": "kwas",
+      "meaning_en": "Intensified or continuous aspect of kwas: crunching or cracking a dry bone/stick",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kwasnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0048",
+      "seed_word": "kwasnci",
+      "meaning_en": "Abstract state/quality associated with kwas",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bam",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0049",
+      "seed_word": "bam",
+      "meaning_en": "Loud thud or heavy door slam",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bam-bam",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0049",
+      "seed_word": "bam",
+      "meaning_en": "Intensified or continuous aspect of bam: loud thud or heavy door slam",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bamnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0050",
+      "seed_word": "bamnci",
+      "meaning_en": "Abstract state/quality associated with bam",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tumm",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0051",
+      "seed_word": "tumm",
+      "meaning_en": "Heavily overflowing or bursting full",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tumm-tumm",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0051",
+      "seed_word": "tumm",
+      "meaning_en": "Intensified or continuous aspect of tumm: heavily overflowing or bursting full",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tummnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0052",
+      "seed_word": "tummnci",
+      "meaning_en": "Abstract state/quality associated with tumm",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "murus",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0053",
+      "seed_word": "murus",
+      "meaning_en": "Completely and utterly consumed or finished",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "murus-murus",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0053",
+      "seed_word": "murus",
+      "meaning_en": "Intensified or continuous aspect of murus: completely and utterly consumed or finished",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "murusnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0054",
+      "seed_word": "murusnci",
+      "meaning_en": "Abstract state/quality associated with murus",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "farafara",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0055",
+      "seed_word": "farafara",
+      "meaning_en": "Fluttering or flapping rapidly like wings",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "babbaka",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0056",
+      "seed_word": "babbaka",
+      "meaning_en": "Scorching, intense heat radiating from fire",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tas",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0057",
+      "seed_word": "tas",
+      "meaning_en": "Completely pure, clean without residue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "tas-tas",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0057",
+      "seed_word": "tas",
+      "meaning_en": "Intensified or continuous aspect of tas: completely pure, clean without residue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "tasnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0058",
+      "seed_word": "tasnci",
+      "meaning_en": "Abstract state/quality associated with tas",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dum",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0059",
+      "seed_word": "dum",
+      "meaning_en": "Deep subterranean boom or muffled roar",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dum-dum",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0059",
+      "seed_word": "dum",
+      "meaning_en": "Intensified or continuous aspect of dum: deep subterranean boom or muffled roar",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dumnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0060",
+      "seed_word": "dumnci",
+      "meaning_en": "Abstract state/quality associated with dum",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kats",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0061",
+      "seed_word": "kats",
+      "meaning_en": "Snap of a taut string or small twig",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kats-kats",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0061",
+      "seed_word": "kats",
+      "meaning_en": "Intensified or continuous aspect of kats: snap of a taut string or small twig",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.45,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "katsnci",
+      "language": "Hausa",
+      "lang_code": "ha",
+      "seed_id": "af_seed_0062",
+      "seed_word": "katsnci",
+      "meaning_en": "Abstract state/quality associated with kats",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tshu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0063",
+      "seed_word": "tshu",
+      "meaning_en": "Pitch black; deep impenetrable darkness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tshu-tshu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0063",
+      "seed_word": "tshu",
+      "meaning_en": "Intensified or continuous aspect of tshu: pitch black; deep impenetrable darkness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tshuka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0064",
+      "seed_word": "tshuka",
+      "meaning_en": "Stative verb derived from ideophone root tshu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gebhu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0065",
+      "seed_word": "gebhu",
+      "meaning_en": "Fiery, blazing crimson red",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gebhu-gebhu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0065",
+      "seed_word": "gebhu",
+      "meaning_en": "Intensified or continuous aspect of gebhu: fiery, blazing crimson red",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gebhuka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0066",
+      "seed_word": "gebhuka",
+      "meaning_en": "Stative verb derived from ideophone root gebhu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "nce",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0067",
+      "seed_word": "nce",
+      "meaning_en": "Pure, immaculate white; dazzling brightness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "nce-nce",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0067",
+      "seed_word": "nce",
+      "meaning_en": "Intensified or continuous aspect of nce: pure, immaculate white; dazzling brightness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "nceka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0068",
+      "seed_word": "nceka",
+      "meaning_en": "Stative verb derived from ideophone root nce",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "tshoko",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0069",
+      "seed_word": "tshoko",
+      "meaning_en": "Vivid, intense green or sky blue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "zwakaha",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0070",
+      "seed_word": "zwakaha",
+      "meaning_en": "Sudden clear realization or sensory perception",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "du",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0071",
+      "seed_word": "du",
+      "meaning_en": "Complete stillness and quietness of a crowd or village",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "du-du",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0071",
+      "seed_word": "du",
+      "meaning_en": "Intensified or continuous aspect of du: complete stillness and quietness of a crowd or village",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "duka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0072",
+      "seed_word": "duka",
+      "meaning_en": "Stative verb derived from ideophone root du",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bhuxe",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0073",
+      "seed_word": "bhuxe",
+      "meaning_en": "Sticking or plunging a spear firmly into ground/target",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "bhuxe-bhuxe",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0073",
+      "seed_word": "bhuxe",
+      "meaning_en": "Intensified or continuous aspect of bhuxe: sticking or plunging a spear firmly into ground/target",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "bhuxeka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0074",
+      "seed_word": "bhuxeka",
+      "meaning_en": "Stative verb derived from ideophone root bhuxe",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gwada",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0075",
+      "seed_word": "gwada",
+      "meaning_en": "Dropping down abruptly to kneel on the ground",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gwada-gwada",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0075",
+      "seed_word": "gwada",
+      "meaning_en": "Intensified or continuous aspect of gwada: dropping down abruptly to kneel on the ground",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gwadaka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0076",
+      "seed_word": "gwadaka",
+      "meaning_en": "Stative verb derived from ideophone root gwada",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "khahlamba",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0077",
+      "seed_word": "khahlamba",
+      "meaning_en": "Rough, jagged, precipitous mountain wall",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mbo",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0078",
+      "seed_word": "mbo",
+      "meaning_en": "Covering over completely; overwhelming overlay",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mbo-mbo",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0078",
+      "seed_word": "mbo",
+      "meaning_en": "Intensified or continuous aspect of mbo: covering over completely; overwhelming overlay",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mboka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0079",
+      "seed_word": "mboka",
+      "meaning_en": "Stative verb derived from ideophone root mbo",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "phu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0080",
+      "seed_word": "phu",
+      "meaning_en": "Sudden puff of dust or strong scent/smoke",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "phu-phu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0080",
+      "seed_word": "phu",
+      "meaning_en": "Intensified or continuous aspect of phu: sudden puff of dust or strong scent/smoke",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "phuka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0081",
+      "seed_word": "phuka",
+      "meaning_en": "Stative verb derived from ideophone root phu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "klwa",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0082",
+      "seed_word": "klwa",
+      "meaning_en": "Screeching or sharp ripping sound of fabric",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "klwa-klwa",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0082",
+      "seed_word": "klwa",
+      "meaning_en": "Intensified or continuous aspect of klwa: screeching or sharp ripping sound of fabric",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "klwaka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0083",
+      "seed_word": "klwaka",
+      "meaning_en": "Stative verb derived from ideophone root klwa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "vhahla",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0084",
+      "seed_word": "vhahla",
+      "meaning_en": "Crashing down of wooden poles or dry branches",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "chifi",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0085",
+      "seed_word": "chifi",
+      "meaning_en": "Squishing or crushing a soft gooey object flat",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "chifi-chifi",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0085",
+      "seed_word": "chifi",
+      "meaning_en": "Intensified or continuous aspect of chifi: squishing or crushing a soft gooey object flat",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "chifika",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0086",
+      "seed_word": "chifika",
+      "meaning_en": "Stative verb derived from ideophone root chifi",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "klebu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0087",
+      "seed_word": "klebu",
+      "meaning_en": "Shattering red, tearing open to reveal red interior",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "klebu-klebu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0087",
+      "seed_word": "klebu",
+      "meaning_en": "Intensified or continuous aspect of klebu: shattering red, tearing open to reveal red interior",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "klebuka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0088",
+      "seed_word": "klebuka",
+      "meaning_en": "Stative verb derived from ideophone root klebu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bhu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0089",
+      "seed_word": "bhu",
+      "meaning_en": "Heavy thud of a falling box or body",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bhu-bhu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0089",
+      "seed_word": "bhu",
+      "meaning_en": "Intensified or continuous aspect of bhu: heavy thud of a falling box or body",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bhuka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0090",
+      "seed_word": "bhuka",
+      "meaning_en": "Stative verb derived from ideophone root bhu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "cwe",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0091",
+      "seed_word": "cwe",
+      "meaning_en": "Clear, transparent, undisturbed water surface",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "cwe-cwe",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0091",
+      "seed_word": "cwe",
+      "meaning_en": "Intensified or continuous aspect of cwe: clear, transparent, undisturbed water surface",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "cweka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0092",
+      "seed_word": "cweka",
+      "meaning_en": "Stative verb derived from ideophone root cwe",
+      "seed_base_vector": {
+        "x1_sharpness": 0.98,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "dlu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0093",
+      "seed_word": "dlu",
+      "meaning_en": "Surging forward aggressively or pushing past",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dlu-dlu",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0093",
+      "seed_word": "dlu",
+      "meaning_en": "Intensified or continuous aspect of dlu: surging forward aggressively or pushing past",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dluka",
+      "language": "Zulu",
+      "lang_code": "zu",
+      "seed_id": "af_seed_0094",
+      "seed_word": "dluka",
+      "meaning_en": "Stative verb derived from ideophone root dlu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "soi-soi",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0095",
+      "seed_word": "soi",
+      "meaning_en": "Clear, transparent, pure red or purple appearance",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gbagara-gbagara",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0096",
+      "seed_word": "gbagara",
+      "meaning_en": "Unsteady, staggering, intoxicated gait of a drunkard",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.5,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "bulu-bulu",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0097",
+      "seed_word": "bulu",
+      "meaning_en": "Dense, billowing smoke rising in massive plumes",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpuk-kpuk",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0098",
+      "seed_word": "kpuk",
+      "meaning_en": "Rapid, anxious thumping of the heartbeat",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.5,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "tek-tek",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0099",
+      "seed_word": "tek",
+      "meaning_en": "Light, brisk, rhythmic stepping of small feet",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gidi-gidi",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0100",
+      "seed_word": "gidi",
+      "meaning_en": "Frantic, chaotic, restless commotion or panic",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "yee",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0101",
+      "seed_word": "yee",
+      "meaning_en": "Pleasantly cool, refreshing breeze or shade",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpang",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0102",
+      "seed_word": "kpang",
+      "meaning_en": "Stiff, rigid, unbending erect posture",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpang-kpang",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0102",
+      "seed_word": "kpang",
+      "meaning_en": "Intensified or continuous aspect of kpang: stiff, rigid, unbending erect posture",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpangnci",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0103",
+      "seed_word": "kpangnci",
+      "meaning_en": "Abstract state/quality associated with kpang",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "fio-fio",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0104",
+      "seed_word": "fio",
+      "meaning_en": "Tall, slender, swaying gracefulness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dir-dir",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0105",
+      "seed_word": "dir",
+      "meaning_en": "Extremely heavy, immovable, ponderous weight",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "puk-puk",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0106",
+      "seed_word": "puk",
+      "meaning_en": "Thudding sound of pounding grain in a wooden mortar",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ngau-ngau",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0107",
+      "seed_word": "ngau",
+      "meaning_en": "Barking loudly or persistent harsh yelping",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "deng-deng",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0108",
+      "seed_word": "deng",
+      "meaning_en": "Taut, stretched tightly like a drum skin",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kor-kor",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0109",
+      "seed_word": "kor",
+      "meaning_en": "Dry, brittle, scratchy surface feel",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "zu-zu",
+      "language": "Gbaya",
+      "lang_code": "gba",
+      "seed_id": "af_seed_0110",
+      "seed_word": "zu",
+      "meaning_en": "Slinking or creeping quietly through grass",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.15,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "kpeee",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0111",
+      "seed_word": "kpeee",
+      "meaning_en": "Deep, intense, saturated blackness across a surface",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "khai",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0112",
+      "seed_word": "khai",
+      "meaning_en": "Blinding, brilliant, sunlit white",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "khai-khai",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0112",
+      "seed_word": "khai",
+      "meaning_en": "Intensified or continuous aspect of khai: blinding, brilliant, sunlit white",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "khainci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0113",
+      "seed_word": "khainci",
+      "meaning_en": "Abstract state/quality associated with khai",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gbam",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0114",
+      "seed_word": "gbam",
+      "meaning_en": "Heavy, resonant impact sound of falling timber or metal",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gbam-gbam",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0114",
+      "seed_word": "gbam",
+      "meaning_en": "Intensified or continuous aspect of gbam: heavy, resonant impact sound of falling timber or metal",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gbamnci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0115",
+      "seed_word": "gbamnci",
+      "meaning_en": "Abstract state/quality associated with gbam",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpiti-kpiti",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0116",
+      "seed_word": "kpiti",
+      "meaning_en": "Frantic, scurrying feet of small animals or crowd",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "vungbe",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0117",
+      "seed_word": "vungbe",
+      "meaning_en": "Massive, hulking, towering physical stature",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "fii",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0118",
+      "seed_word": "fii",
+      "meaning_en": "Breezing past with high swift speed",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fii-fii",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0118",
+      "seed_word": "fii",
+      "meaning_en": "Intensified or continuous aspect of fii: breezing past with high swift speed",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.95,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "fiinci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0119",
+      "seed_word": "fiinci",
+      "meaning_en": "Abstract state/quality associated with fii",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ghoo",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0120",
+      "seed_word": "ghoo",
+      "meaning_en": "Eerie, deserted, quiet expanse",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "ghoo-ghoo",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0120",
+      "seed_word": "ghoo",
+      "meaning_en": "Intensified or continuous aspect of ghoo: eerie, deserted, quiet expanse",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "ghoonci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0121",
+      "seed_word": "ghoonci",
+      "meaning_en": "Abstract state/quality associated with ghoo",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "titi-titi",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0122",
+      "seed_word": "titi",
+      "meaning_en": "Rumbling vibration of distant thunder or stamping feet",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpaa",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0123",
+      "seed_word": "kpaa",
+      "meaning_en": "Thoroughly dried out, parched, arid condition",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpaa-kpaa",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0123",
+      "seed_word": "kpaa",
+      "meaning_en": "Intensified or continuous aspect of kpaa: thoroughly dried out, parched, arid condition",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpaanci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0124",
+      "seed_word": "kpaanci",
+      "meaning_en": "Abstract state/quality associated with kpaa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "nyen-nyen",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0125",
+      "seed_word": "nyen",
+      "meaning_en": "Twisting, wriggling, serpentine motion",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpe-kpe",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0126",
+      "seed_word": "kpe",
+      "meaning_en": "Neatly arranged, tight side-by-side order",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "zaa",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0127",
+      "seed_word": "zaa",
+      "meaning_en": "Heavy pouring of rain onto leaves",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "zaa-zaa",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0127",
+      "seed_word": "zaa",
+      "meaning_en": "Intensified or continuous aspect of zaa: heavy pouring of rain onto leaves",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "zaanci",
+      "language": "Emai",
+      "lang_code": "ema",
+      "seed_id": "af_seed_0128",
+      "seed_word": "zaanci",
+      "meaning_en": "Abstract state/quality associated with zaa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "yibx",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0129",
+      "seed_word": "yibx",
+      "meaning_en": "Primary word for black; dark, jet-black ideophone root",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "yibx-yibx",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0129",
+      "seed_word": "yibx",
+      "meaning_en": "Intensified or continuous aspect of yibx: primary word for black; dark, jet-black ideophone root",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "yibxnci",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0130",
+      "seed_word": "yibxnci",
+      "meaning_en": "Abstract state/quality associated with yibx",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "zoŋ-zoŋ",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0131",
+      "seed_word": "zoŋ",
+      "meaning_en": "Luminous, brilliant scarlet or purple-red",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kplakpla",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0132",
+      "seed_word": "kplakpla",
+      "meaning_en": "Hasty, restless, hurried movements without caution",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "bɔbɔbɔ",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0133",
+      "seed_word": "bɔbɔbɔ",
+      "meaning_en": "Extremely soft, pliable, yields gently to touch",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "syasyasya",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0134",
+      "seed_word": "syasyasya",
+      "meaning_en": "Gushing water or heavy downpour roaring sound",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gliii",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0135",
+      "seed_word": "gliii",
+      "meaning_en": "Immovably firm, towering like a stone wall",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "dzẽe",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0136",
+      "seed_word": "dzẽe",
+      "meaning_en": "Brightly glowing reddish or orange hue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dzẽe-dzẽe",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0136",
+      "seed_word": "dzẽe",
+      "meaning_en": "Intensified or continuous aspect of dzẽe: brightly glowing reddish or orange hue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dzẽenci",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0137",
+      "seed_word": "dzẽenci",
+      "meaning_en": "Abstract state/quality associated with dzẽe",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpooo",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0138",
+      "seed_word": "kpooo",
+      "meaning_en": "Tranquil, peaceful, calm, undisturbed state",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.15,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "kpooo-kpooo",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0138",
+      "seed_word": "kpooo",
+      "meaning_en": "Intensified or continuous aspect of kpooo: tranquil, peaceful, calm, undisturbed state",
+      "seed_base_vector": {
+        "x1_sharpness": 0.3,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.15,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.6
+      }
+    },
+    {
+      "original_word": "kpooonci",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0139",
+      "seed_word": "kpooonci",
+      "meaning_en": "Abstract state/quality associated with kpooo",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "tsatsatsa",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0140",
+      "seed_word": "tsatsatsa",
+      "meaning_en": "Rapid, energetic, brisk walking or dancing",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "feee",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0141",
+      "seed_word": "feee",
+      "meaning_en": "Feather-light, floating effortlessly in air",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "vuvu",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0142",
+      "seed_word": "vuvu",
+      "meaning_en": "Fluttering or shaking uncontrollably in wind",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "vuvu-vuvu",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0142",
+      "seed_word": "vuvu",
+      "meaning_en": "Intensified or continuous aspect of vuvu: fluttering or shaking uncontrollably in wind",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "vuvunci",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0143",
+      "seed_word": "vuvunci",
+      "meaning_en": "Abstract state/quality associated with vuvu",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpakpa",
+      "language": "Ewe",
+      "lang_code": "ee",
+      "seed_id": "af_seed_0144",
+      "seed_word": "kpakpa",
+      "meaning_en": "Clapping hands or wood hitting together",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "c'onc'on",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0145",
+      "seed_word": "c'onc'on",
+      "meaning_en": "Woven extremely tightly, dense mesh/fabric",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ulakpulak",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0146",
+      "seed_word": "ulakpulak",
+      "meaning_en": "Unbalanced, terrifying, unstable appearance",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "colcol",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0147",
+      "seed_word": "colcol",
+      "meaning_en": "Liquids flowing smoothly or gurgling in a stream",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "kpɔrikpɔri",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0148",
+      "seed_word": "kpɔrikpɔri",
+      "meaning_en": "Rough, coarse, uneven surface like tree bark",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "nyimi-nyimi",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0149",
+      "seed_word": "nyimi",
+      "meaning_en": "Tiny, continuous, shimmering movements like insects",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kpɔtɔkpɔtɔ",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0150",
+      "seed_word": "kpɔtɔkpɔtɔ",
+      "meaning_en": "Thick, muddy, slushy, squelching wetness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kpikpi",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0151",
+      "seed_word": "kpikpi",
+      "meaning_en": "Crowded tightly together without space between",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "fɔfɔfɔ",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0152",
+      "seed_word": "fɔfɔfɔ",
+      "meaning_en": "Fluffy, light, airy cotton-like texture",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kporo-kporo",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0153",
+      "seed_word": "kporo",
+      "meaning_en": "Dry seeds rattling inside a dried gourd",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "dzidzidzi",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0154",
+      "seed_word": "dzidzidzi",
+      "meaning_en": "Shivering with intense cold or bodily tremor",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "sɛsɛsɛ",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0155",
+      "seed_word": "sɛsɛsɛ",
+      "meaning_en": "Clean, pristine, neat condition",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "kpukpu",
+      "language": "Siwu",
+      "lang_code": "sib",
+      "seed_id": "af_seed_0156",
+      "seed_word": "kpukpu",
+      "meaning_en": "Short, stubby, thickset physique",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gwada",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0075",
+      "seed_word": "gwada",
+      "meaning_en": "Kneeling down suddenly or abruptly falling to knees",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gwada-gwada",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0075",
+      "seed_word": "gwada",
+      "meaning_en": "Intensified or continuous aspect of gwada: kneeling down suddenly or abruptly falling to knees",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gwadaka",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0076",
+      "seed_word": "gwadaka",
+      "meaning_en": "Stative verb derived from ideophone root gwada",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "dzveng",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0157",
+      "seed_word": "dzveng",
+      "meaning_en": "Swerving or dodging quickly to evade an obstacle",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "nyik",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0158",
+      "seed_word": "nyik",
+      "meaning_en": "Dipping or immersing something briefly into water",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "nyik-nyik",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0158",
+      "seed_word": "nyik",
+      "meaning_en": "Intensified or continuous aspect of nyik: dipping or immersing something briefly into water",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "nyikka",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0159",
+      "seed_word": "nyikka",
+      "meaning_en": "Stative verb derived from ideophone root nyik",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pata-pata",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0160",
+      "seed_word": "pata",
+      "meaning_en": "Clattering, rapid footsteps or sandal sound",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pindilili",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0161",
+      "seed_word": "pindilili",
+      "meaning_en": "Entering deep inside a dark cave or room without pause",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.05,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "tsvukuru",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0162",
+      "seed_word": "tsvukuru",
+      "meaning_en": "Striking, rich reddish-brown hue",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.7,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "mbee",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0163",
+      "seed_word": "mbee",
+      "meaning_en": "Clean, pristine, brightly lit whiteness",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.95,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "zii",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0164",
+      "seed_word": "zii",
+      "meaning_en": "Dead, motionless stillness across the land",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "zii-zii",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0164",
+      "seed_word": "zii",
+      "meaning_en": "Intensified or continuous aspect of zii: dead, motionless stillness across the land",
+      "seed_base_vector": {
+        "x1_sharpness": 0.45,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.25,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "ziika",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0165",
+      "seed_word": "ziika",
+      "meaning_en": "Stative verb derived from ideophone root zii",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ribi",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0166",
+      "seed_word": "ribi",
+      "meaning_en": "Heavy thud of a large animal falling over",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ribi-ribi",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0166",
+      "seed_word": "ribi",
+      "meaning_en": "Intensified or continuous aspect of ribi: heavy thud of a large animal falling over",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "ribika",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0167",
+      "seed_word": "ribika",
+      "meaning_en": "Stative verb derived from ideophone root ribi",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "chachacha",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0168",
+      "seed_word": "chachacha",
+      "meaning_en": "Torrential downpour beating on roofs or leaves",
+      "seed_base_vector": {
+        "x1_sharpness": 0.85,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "pwa",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0024",
+      "seed_word": "pwa",
+      "meaning_en": "Crushing or squishing an insect or egg",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pwa-pwa",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0024",
+      "seed_word": "pwa",
+      "meaning_en": "Intensified or continuous aspect of pwa: crushing or squishing an insect or egg",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.6,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "pwaka",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0025",
+      "seed_word": "pwaka",
+      "meaning_en": "Stative verb derived from ideophone root pwa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kobvo",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0169",
+      "seed_word": "kobvo",
+      "meaning_en": "Extremely thick, heavy rope or plank",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kobvo-kobvo",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0169",
+      "seed_word": "kobvo",
+      "meaning_en": "Intensified or continuous aspect of kobvo: extremely thick, heavy rope or plank",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "kobvoka",
+      "language": "Shona",
+      "lang_code": "sn",
+      "seed_id": "af_seed_0170",
+      "seed_word": "kobvoka",
+      "meaning_en": "Stative verb derived from ideophone root kobvo",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "timutimutiku",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0171",
+      "seed_word": "timutimutiku",
+      "meaning_en": "Plump, rounded, fleshy appearance",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "bambariba",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0172",
+      "seed_word": "bambariba",
+      "meaning_en": "Hugely bulky, massive, rotund stature",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "yomuyomu",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0173",
+      "seed_word": "yomuyomu",
+      "meaning_en": "Deliciously rich, slippery, succulent food texture",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.15
+      }
+    },
+    {
+      "original_word": "fian-fian",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0174",
+      "seed_word": "fian",
+      "meaning_en": "Blazing, scorching, blinding sunlight",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "girigiri",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0175",
+      "seed_word": "girigiri",
+      "meaning_en": "Rushing forward in a stampede or heavy footsteps",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.7,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "radarada",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0176",
+      "seed_word": "radarada",
+      "meaning_en": "Senseless, disorderly, trashy behavior/appearance",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "san-an",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0177",
+      "seed_word": "san",
+      "meaning_en": "Crystal clear, transparent, unclouded sky or liquid",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "patapata",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0178",
+      "seed_word": "patapata",
+      "meaning_en": "Completely, entirely, altogether finished",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "felefele",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0179",
+      "seed_word": "felefele",
+      "meaning_en": "Paper-thin, delicate, light sheet material",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.8,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "gbosa",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0180",
+      "seed_word": "gbosa",
+      "meaning_en": "Explosive loud crack of a gunshot or heavy slap",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gbosa-gbosa",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0180",
+      "seed_word": "gbosa",
+      "meaning_en": "Intensified or continuous aspect of gbosa: explosive loud crack of a gunshot or heavy slap",
+      "seed_base_vector": {
+        "x1_sharpness": 0.5,
+        "x2_mass": 0.98,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "gbosanci",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0181",
+      "seed_word": "gbosanci",
+      "meaning_en": "Abstract state/quality associated with gbosa",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.75,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.85
+      }
+    },
+    {
+      "original_word": "kia-kia",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0182",
+      "seed_word": "kia",
+      "meaning_en": "Extremely fast, prompt, swift action",
+      "seed_base_vector": {
+        "x1_sharpness": 0.8,
+        "x2_mass": 0.15,
+        "x3_velocity": 0.85,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    },
+    {
+      "original_word": "rederede",
+      "language": "Yoruba",
+      "lang_code": "yo",
+      "seed_id": "af_seed_0183",
+      "seed_word": "rederede",
+      "meaning_en": "Foolish, absurd, nonsensical conduct",
+      "seed_base_vector": {
+        "x1_sharpness": 0.65,
+        "x2_mass": 0.4,
+        "x3_velocity": 0.5,
+        "x8_luminance": 0.5,
+        "x11_hardness": 0.4
+      }
+    }
+  ]
+}
