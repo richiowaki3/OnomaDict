@@ -12,7 +12,7 @@ Designed as a conversion hub across choreography, acoustic synthesis, computer g
 
 The Japanese (JP) and Korean (KR) dictionaries are organized into independent directories. Both languages provide **Full Versions (with English meanings & descriptions)** and **Data-Compressed Versions (ultra-lightweight for real-time applications)**.
 
-`
+```
 data/
 ├── jp/  (Japanese Onomatopoeia Dictionary - 2,061 entries)
 │   ├── onomatopoeia_dictionary_jp.csv          ← Full Version (English meanings & category names)
@@ -24,19 +24,17 @@ data/
     ├── onomatopoeia_dictionary_kr.json         ← Full Version JSON
     ├── onomatopoeia_dictionary_kr_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
     └── onomatopoeia_dictionary_kr_compact.json ← Data-Compressed Version JSON
-`
+```
 
 ---
 
 ## Dataset Variations
 
 ### 1. Full Version (onomatopoeia_dictionary_XX.csv / .json)
-- **Features**: Includes English definitions (meaning_en), English sound-symbolic rationales (
-ationale), Romanization (pronunciation_romaji), and English category names.
+- **Features**: Includes English definitions (meaning_en), English sound-symbolic rationales (rationale), Romanization (pronunciation_romaji), and English category names.
 
 ### 2. Data-Compressed Version (onomatopoeia_dictionary_XX_compact.csv / .json)
-- **Features**: Removes natural language text (meaning_en, 
-ationale, lags) to minimize payload size (65-80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering ((dom_bit & 1) != 0).
+- **Features**: Removes natural language text (meaning_en, rationale, flags) to minimize payload size (65-80% size reduction). Category metadata is represented as **numeric bitmasks** for millisecond-level bitwise AND filtering (`(dom_bit & 1) != 0`).
 
 ---
 
@@ -47,8 +45,9 @@ ationale, lags) to minimize payload size (65-80% size reduction). Category meta
 - **Domain (domain / dom_bit)**: Texture (1), Dynamics (2), Temperature (4), Speed/Tempo (8), Color/Light (16), Density/Distance (32), Relationship (64), Silence (128), Taste (256), Mass/Weight (512), Smell (1024), Emotion (2048), Weather/Nature (4096), Living Beings (8192), Human Body/Physiology (16384).
 - **Polarity (polarity / pol_code)**: Positive (1), Negative (2), Neutral (0).
 - **Intensity (intensity / int_bit)**: Unvoiced/Light (1), Voiced/Heavy (2), Semi-voiced/Crisp (4).
-- **Tone (	one / 	one_code)**: Bright/Light/Small (1), Dark/Heavy/Large (2), Neutral (0).
+- **Tone (tone / tone_code)**: Bright/Light/Small (1), Dark/Heavy/Large (2), Neutral (0).
 - **Morphology (morphology / morph_bit)**: Reduplication (1), Geminate (2), Moraic Nasal (4), -ri Ending (8), Long Vowel (16), Single/Other (32).
+- **Stem Origin (stem_origin / stem_bit)**: Mimetic Pure Root (1), Verb-derived (2), Adjective-derived (4), Noun-derived (8), Adverbial/Functional (16), Somatic/Body-derived (32).
 
 ### Category A: Laban Effort (Instantaneous Movement Quality)
 - effort.weight (x1): Weight (0: Light ↔ 9: Heavy)
@@ -57,11 +56,11 @@ ationale, lags) to minimize payload size (65-80% size reduction). Category meta
 - effort.flow (x4): Flow (0: Free ↔ 9: Bound/Inhibited)
 
 ### Category B: Acoustic Physics
-- coustic.hardness (x5): Hardness (0: Rigid ↔ 9: Fluid)
-- coustic.moisture (x6): Moisture (0: Dry ↔ 9: Saturated)
-- coustic.freq_hz (x7_hz): Acoustic Frequency (100–3500 Hz)
-- coustic.freq_norm (x7_norm): log10 Normalized Frequency (0–9)
-- coustic.decay (x8): Sound Decay (0: Sustained ↔ 9: Sudden Cutoff)
+- acoustic.hardness (x5): Hardness (0: Rigid ↔ 9: Fluid)
+- acoustic.moisture (x6): Moisture (0: Dry ↔ 9: Saturated)
+- acoustic.freq_hz (x7_hz): Acoustic Frequency (100–3500 Hz)
+- acoustic.freq_norm (x7_norm): log10 Normalized Frequency (0–9)
+- acoustic.decay (x8): Sound Decay (0: Sustained ↔ 9: Sudden Cutoff)
 
 ### Category C: Extended Sensory & Fluid Dynamics
 - extended.reynolds (x9_re): Reynolds Number (100–20000)
@@ -94,4 +93,4 @@ ationale, lags) to minimize payload size (65-80% size reduction). Category meta
 
 ## License
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (Creative Commons Attribution 4.0 International).
-Fell free to use, modify, and redistribute. Please credit Richi Owaki and Unexplored Onomatopoeia Dictionary.
+Feel free to use, modify, and redistribute. Please credit Richi Owaki and Unexplored Onomatopoeia Dictionary.
