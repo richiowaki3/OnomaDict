@@ -1,31 +1,42 @@
 # 未開拓オノマトペ辞書 (Unexplored Onomatopoeia Dictionary)
 
-日本語オノマトペ 764語を、物理・感覚・運動・リズム・アクセントの多層ベクトルとして記述した辞書。
-うち708語は既存語、56語は意味空間の空白（疎領域）を埋めるために生成された新語（`generated: true`）。
+日本語オノマトペ 2,061語を、物理・感覚・運動・リズム・アクセント・メタタグの多層ベクトルおよびビットフラグとして記述した辞書。
+旧764語から1,297語を追加拡充し、全語彙に16次元コアベクトルおよびメタタグを採録しています。
 
-身体表現・音響合成・モーション・色彩など、任意のジャンルへ状態を変換するハブとして使うことを想定している。
+身体表現・音響合成・モーション・色彩・自然言語処理など、任意のジャンルへ状態を変換するハブとして使うことを想定しています。
 
 > 手法・理論・パイプラインの詳細は [METHODOLOGY.md](METHODOLOGY.md)（日英併記）を参照。
 > See [METHODOLOGY.md](METHODOLOGY.md) for the full methodology, references, and pipeline (JP/EN).
 
-## 辞書の構造
-OnomaDict は日本語オノマトペ（擬音語・擬態語）を多次元ベクトルで記述する辞書。ベクトルは4系統で構成される：
+---
 
-- **身体表現系（Category A）**：ラバン・エフォート（x₁–x₄）。動きの質。
-- **音楽音響系（Category B）**：発声気圧・音響物理（x₅–x₈）。耳に届く音の測定。
-- **オノマトペイメージ系（Category C）**：拡張感覚・現実物理・心理（x₉–x₁₂）。口腔内調音の流体計算（Reynolds 等）を音象徴イメージに結ぶ。照明系（色 x₁₂／CIELAB）は現状手薄。
-- **フレージング系（Category D）**：拍節・時間構造（x₁₃–x₁₆）。
+## 辞書データの2つのバリエーション（同一データ内容）
 
-列定義は `data/SCHEMA.md`、参考文献は `REFERENCES.md`。データは 764語。
+本辞書は、用途に合わせて全内容が同一の**2種類のバリエーション（フルバージョン / データ圧縮バージョン）**を提供しています。
 
-## 最新版ファイル
+### 1. フルバージョン（説明書きあり・人間参照および詳細分析用）
+- **data/onomatopoeia_dictionary.csv** (UTF-8, 36列)
+- **data/onomatopoeia_dictionary.json** (JSON構造化・整形済み)
+- **特徴**: 言葉の意味（meaning）およびベクトル配置の物理・感覚解説文（
+ationale）が含まれています。カテゴリー分類は直感的に理解しやすい日本語名称（テキスト表記）で格納されています。
 
-- **`data/onomatopoeia_dictionary.json`** — アプリ参照用（推奨。カテゴリ別に入れ子化）
-- **`data/onomatopoeia_dictionary.csv`** — 表計算・分析用（UTF-8 BOM付き、36列フラット）
-- **`data/troje_gait/`** — Nikolaus F. Troje (2002) 生体運動（歩行パターン）合成用データ＆数理モデル（詳細は [TROJE_GAIT.md](data/troje_gait/TROJE_GAIT.md)）
-- `archive/` — 旧版（v1: 12軸 / v2: 16軸）。参照用に保存。
+### 2. データ圧縮バージョン（説明書きなし・アプリ高速通信およびビット演算用）
+- **data/onomatopoeia_dictionary_compact.csv** (UTF-8, 31列, 約67%軽量化)
+- **data/onomatopoeia_dictionary_compact.json** (ミニファイ圧縮, 約79%軽量化)
+- **特徴**: アプリケーション通信やリアルタイム処理のために自然文テキスト（meaning, 
+ationale, lags）を完全除去。カテゴリー情報は**ビットフラグ（数値）**で格納されており、通信量を大幅削減するとともにビットAND演算 ((dom_bit & 1) != 0) によるミリ秒単位の高速フィルタリングに対応しています。
 
-## ベクトル構造（4カテゴリ + アクセント層）
+---
+
+## ベクトル構造（4カテゴリ + アクセント層 + ビットフラグ）
+
+### ビットフラグ・カテゴリ層 (Bitmask Metadata)
+- **cat_bit / category**: 古典5分類 (1:擬声語, 2:擬音語, 4:擬態語, 8:擬情語, 16:擬痛語 のビット和)
+- **dom_bit / domain**: 感覚・属性ドメイン (1:テクスチャー, 2:ダイナミクス, 4:温度, 8:スピード, 16:色光, 32:密集, 64:関係性, 128:静寂, 256:味, 512:質量, 1024:匂い, 2048:感情, 4096:気象自然, 8192:生き物, 16384:人体生理 のビット和)
+- **pol_code / polarity**: 感情価 (1:快, 2:不快, 0:中立)
+- **int_bit / intensity**: 音韻強度 (1:清音, 2:濁音, 4:半濁音 のビット和)
+- **	one_code / 	one**: 明暗スケール (1:明るい・軽い・小, 2:暗い・重い・大, 0:中立)
+- **morph_bit / morphology**: 形態パターン (1:畳語, 2:促音, 4:撥音, 8:「り」変化, 16:長音, 32:その他 のビット和)
 
 ### Category A: ラバン・エフォート（瞬間の動きの質）
 | キー | 内容 | 範囲 |
@@ -58,67 +69,25 @@ OnomaDict は日本語オノマトペ（擬音語・擬態語）を多次元ベ�
 ### Category D: フレージング／拍節（複数の動きのまとまり）
 | キー | 内容 | 範囲 |
 |---|---|---|
-| phrasing.accent (x13) | アクセント 0:衝撃先行↔9:蓄勢後発 ※下記注 | 0–9 |
+| phrasing.accent (x13) | アクセント 0:衝撃先行↔9:蓄勢後発 | 0–9 |
 | phrasing.contour (x14) | 推移 0:加速↔9:減勢 | 0–9 |
 | phrasing.meter (x15) | 拍 0:単発↔9:高頻度反復 | 0–9 |
 | phrasing.regularity (x16) | 規則性 0:規則的↔9:不規則ジッター | 0–9 |
-| phrasing.tau | 3点キーフレームのピーク時刻（時間重心, 0–1） | 0–1 |
 
-x14/x15/x16 は合成音のエンベロープ解析による実測値。x13 は合成音からは
-真値が出ない（前重心に縮退する）ため、形態型由来のprior値（`x13_status`参照）。
+---
 
-### アクセント層（UniDicによる東京式アクセント）
-| キー | 内容 |
-|---|---|
-| accent.unidic_atype | アクセント核位置（0=平板, 1=頭高, 2以上=中高/尾高）。生成語等はnull |
-| accent.accent_class | 頭高/中高・尾高/平板 |
-| accent.default | front / back / flat |
-| accent.variant | true=アクセントで意味が割れうる語（後ろ寄り237語。人手較正・方言対応の保留地） |
-| accent.source | whole=語全体一致 / firsttoken=複合の先頭語 |
+## アプリからの参照例
 
-東京式のみ。方言差（関西「二時/虹」、山口「山口県/山口市」等）とオノマトペ固有の
-ずれ、生成語のアクセントは未較正。`accent.variant=true` の語が要確認リスト。
+`
+# フルバージョン (JSON)
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/onomatopoeia_dictionary.json
 
-### メタ情報
-- `morph_type` — 形態型（畳語/促音単発/撥音単発/長音/複合異種 等9類型）
-- `generated` — 生成語フラグ（疎領域充填、56語）
+# データ圧縮バージョン (Compact JSON)
+https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/onomatopoeia_dictionary_compact.json
+`
 
-## 正規化の定義
-- `freq_norm` = (log10(Hz) − log10(100)) / (log10(3500) − log10(100)) × 9
-- `reynolds_norm` = (log10(Re) − log10(100)) / (log10(20000) − log10(100)) × 9
-
-## 設計上の注意
-- Category A（x1–x4）は確定・凍結。x2は「時間への態度」であり音の長さ・ADSRではない。
-- x2とx8には強い相関（r≈0.83）があるが、これは「突発的な事象は速く減衰する」物理的制約の反映。
-- x16（拍ジッター）とx9（媒質乱流）は独立（実測 r≈−0.03）。
-- 生成語56語のベクトルは音素サブ辞書による予測値、色はモデル導出の暫定値。
-
-## アプリからの参照
-
-公開リポジトリ:
-```
-https://raw.githubusercontent.com/<user>/<repo>/main/data/onomatopoeia_dictionary.json
-```
-
-## 来歴
-- オノマトペの語彙の空白をテーマとしたパフォーマンス制作が前提。
-- 第1辞書: Richi Owaki + Gemini（2025年末、708語）。
-- 設計見直し: Richi Owaki + Claude（2026年6月）。クリーニング、PCA、形態テンプレート分離、
-  音素サブ辞書、疎領域の逆変換による56語生成、音響合成、D軸（フレージング）の実測較正、
-  UniDicによるアクセント層付与。
-- エフォート理論の機構論的再定式化を別系統と並行（A/D軸の設計根拠）。
-- 今後: 外国語（韓国語・声調言語等）の拡張を予定。
-
-### 理論的参照
-Noguchi『原初生命体としての人間』, Laban (Effort), 早川・松井・渡邊「オノマトペの触り心地マップ」(2010),
-TECHTILE (YCAM×慶應), Hamano (1998), Sievers et al. PNAS (2013), Russell (1980),
-Dingemanse (2012), UniDic（国立国語研究所）.
+---
 
 ## ライセンス
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（クリエイティブ・コモンズ 表示 4.0 国際）。
-商用を含め誰でも自由に利用・改変・再配布できます。条件はクレジット表示（Richi Owaki および本辞書名）のみ。
-アクセント層はUniDic（国立国語研究所）を用いて付与。詳細はLICENSEファイル参照。
-
-### ライセンス・引用
-CC BY 4.0。利用時は本リポジトリを出典として明記してください。
-
+商用を含め誰でも自由に利用・改変・再配布できます。クレジット表示（Richi Owaki および本辞書名）をお願いいたします。
