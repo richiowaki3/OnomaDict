@@ -1,112 +1,77 @@
-# 手法と理論的背景 / Methodology and Theoretical Background
+# Methodology and Theoretical Background
 
-> 未開拓オノマトペ辞書 (Unexplored Onomatopoeia Dictionary) の構築手法、使用した理論・論文、データ処理パイプラインの概要。
-> Overview of the construction methodology, theoretical references, and data-processing pipeline of the Unexplored Onomatopoeia Dictionary.
-
----
-
-## 1. 設計思想 / Design Philosophy
-
-**JP:** 本辞書は、日本語オノマトペを「物理・感覚の潜在空間」上の点として記述する。トランスフォーマーが言語を潜在ベクトルへ符号化（encode）し別表層へ復号（decode）する構造を外在化し、感覚を共通の中間表現、各言語の音韻規則を符号化器／復号器とみなす。これにより詩・音楽・舞踊・色を横断する状態変換ハブを目指す。起点は早川・松井・渡邊「オノマトペの触り心地マップ」におけるマトリクスの空白領域——「言い方のない感覚は存在するか」という問い。
-
-**EN:** The dictionary describes Japanese onomatopoeia as points in a latent space of physical and sensory dimensions. It externalizes the transformer encoder/decoder structure: sensation is the shared intermediate representation, and each language's phonological rules act as encoder/decoder. The aim is a cross-modal conversion hub spanning poetry, music, dance, and color. The origin is the blank regions in the onomatopoeia tactile map (Hayakawa, Matsui & Watanabe), and the question: do sensations exist for which no word yet exists?
+Overview of the construction methodology, theoretical references, and data-processing pipeline of the **Unexplored Onomatopoeia Dictionary (JP & KR)**.
 
 ---
 
-## 2. ベクトル構造 / Vector Structure (16 axes + accent layer)
+## 1. Design Philosophy
 
-| Category | Axes | 由来 / Source |
-|---|---|---|
-| A. Effort | x1 Weight, x2 Time, x3 Space, x4 Flow | Laban Movement Analysis (Effort) |
-| B. Acoustic | x5 Hardness, x6 Moisture, x7 Frequency, x8 Decay | 音響物理 / acoustic physics |
-| C. Extended | x9 Reynolds, x10 Boyle, x11 Temperature, x12 Color(→CIELAB) | 流体力学・触覚・色彩 / fluid dynamics, haptics, color |
-| D. Phrasing | x13 Accent, x14 Contour, x15 Meter, x16 Regularity | フレージング／拍節 / phrasing & meter |
-| Accent | UniDic accent type | 東京式アクセント / Tokyo-dialect pitch accent |
+This dictionary formalizes Japanese and Korean onomatopoeia as points in a multidimensional latent space of physical and sensory dimensions. It externalizes the Transformer architecture (Encoder $\rightarrow$ Latent Representation $\rightarrow$ Decoder): sensory perception serves as the shared intermediate representation, while each language's phonological and sound-symbolic rules act as language-specific encoders and decoders.
 
-**JP:** x2 Time は「時間への態度（突発↔持続）」であり音の長さではない。ADSRはB側の派生。x9 Reynolds・x7 Frequencyは生値を保持しつつlog10正規化列を併設。x11は序数化、x12はsRGB→CIELAB(D65)変換。
+The goal is to serve as a cross-modal conversion hub spanning dance choreography, acoustic synthesis, computer graphics, motion design, lighting, and natural language processing. 
 
-**EN:** x2 Time is the *attitude toward time* (sudden vs. sustained), not duration; ADSR is derived on the B side. x9 and x7 keep raw values alongside log10-normalized columns. x11 is ordinalized; x12 is converted sRGB→CIELAB (D65).
-
-### Category D：フレージング／拍節（x₁₃–x₁₆）
-エフォートの「時間への態度」（x₂）とは別系統の時間概念として、複数の動きのまとまり＝フレージング／拍節を独立カテゴリ D として新設。x₁₃ Accent（衝撃先行↔蓄勢後発）、x₁₄ Contour（加速↔減勢）、x₁₅ Meter（単発↔連続）、x₁₆ Regularity（規則↔ジッター）。各語を［始点・アクセント点・終点］の3点キーフレームに展開する時間レイヤーを与える。詳細な列定義は `data/SCHEMA.md`。
-
-### x₂ の純化と x₈ との分離
-x₂ Time は「時間への態度」（即決／時間に委ねる）という純粋なエフォート質に定義を限定し、音の物理的時間構造（ADSR）は Category B の x₈ に分離した。促音っ・長音ーは推定の手がかりだが定義そのものではない。
-
-### 認識論的レイヤリング（素朴物理学 vs 本物物理学）
-Category A（エフォート）は人が知覚・実演する運動の質＝素朴物理学（観察者依存の物理像）であり、Category B（音響測定）・C の Reynolds（口腔内空気の実流体力学）＝本物物理学とは認識論的身分が異なる。A と B/C を同一の物理軸として等価に距離計算しないこと。LMAの低信頼性（Bernardet et al. 2019）は、エフォートが素朴物理学＝観察者依存である本性の帰結として理解される。
+The project originates from the unmapped blank regions in the tactile matrix of onomatopoeia (Hayakawa, Matsui & Watanabe, 2010), raising the fundamental question: *Do physical sensations exist for which no word yet exists in natural language?*
 
 ---
 
+## 2. Vector Structure (16 Core Axes + Phrasing + Accent)
 
-## 3. パイプライン / Pipeline
+| Category | Axes | Theoretical Origin / Source |
+| :--- | :--- | :--- |
+| **A. Effort** | $x_1$ Weight, $x_2$ Time, $x_3$ Space, $x_4$ Flow | Laban Movement Analysis (LMA Effort Factors) |
+| **B. Acoustic** | $x_5$ Hardness, $x_6$ Moisture, $x_7$ Frequency, $x_8$ Decay | Acoustic Physics & Signal Processing |
+| **C. Extended** | $x_9$ Reynolds, $x_{10}$ Boyle, $x_{11}$ Temperature, $x_{12}$ Color ($\rightarrow$ CIELAB) | Fluid Dynamics, Haptics, and Colorimetry |
+| **D. Phrasing** | $x_{13}$ Accent, $x_{14}$ Contour, $x_{15}$ Meter, $x_{16}$ Regularity | Phrase-scale Meter & Rhythmic Envelope |
+| **Accent Layer** | Pitch Accent Type (UniDic) | Pitch Accent / Prosodic Nucleus |
 
-**JP:**
-1. **クリーニング** — かな→IPA変換器を実装し全語のIPAを機械再生成・原文照合。スケール正規化（log10、序数化、CIELAB）。
-2. **次元分析** — 相関行列のPCA。実効次元はおおむね3（衝撃性・質量・温度）。x2×x8に強相関（r≈0.83）。
-3. **形態テンプレート分離** — 語を9類型（畳語・促音単発・撥音単発・り単発・長音 等）に分解し、語根とテンプレート効果を分離。
-4. **音素サブ辞書** — 語根を子音/母音/濁音/拗音/語尾の素性に展開し、リッジ回帰で素性→ベクトルの順方向モデルを学習（597語根）。
-5. **疎領域検出と逆変換** — 候補語形を列挙→順方向モデルで予測→既存語から最遠の座標を選定（k近傍距離）→共鳴条件・調音ジェスチャー制約で選別→56語を生成。
-6. **音響合成** — 16軸→ADSR・波形・グラニュラー・残響への決定論的写像（Web Audio / Python一括レンダラ）。
-7. **D軸の実測較正** — 合成音エンベロープ解析でx13–x16を測定（IOI変動係数→x16、エネルギー時間重心→x13・τ、振幅トレンド→x14、オンセット密度→x15）。
-8. **アクセント層** — UniDic(fugashi/unidic-lite)でアクセント核位置を付与。後ろ寄り語に variant フラグ。
+### Purification of $x_2$ Time vs. Acoustic Decay ($x_8$)
+- **$x_2$ Time** is defined strictly as the internal **attitude toward time** (sudden vs. sustained impulse), representing pure kinematic effort quality. It does not measure physical sound duration.
+- **$x_8$ Decay** captures the physical acoustic decay, reverberation, and ADSR envelope cutoff in Category B.
 
-**EN:**
-1. **Cleaning** — kana→IPA transducer regenerates all IPA and cross-checks originals; scale normalization (log10, ordinal, CIELAB).
-2. **Dimensionality** — PCA on the correlation matrix; effective rank ≈3 (impact / mass / temperature). Strong x2×x8 correlation (r≈0.83).
-3. **Morphological template separation** — words decomposed into 9 types (reduplication, geminate-final, moraic-nasal-final, -ri, long-vowel, etc.); roots and template effects separated.
-4. **Phoneme sub-dictionary** — roots expanded into consonant/vowel/voicing/palatalization/ending features; ridge regression learns a forward feature→vector model (597 roots).
-5. **Sparse-region detection & inverse generation** — enumerate candidate forms → predict vectors → select coordinates farthest from existing words (k-NN distance) → filter by resonance and articulatory-gesture constraints → 56 generated words.
-6. **Acoustic synthesis** — deterministic mapping from 16 axes to ADSR, waveform, granular layer, reverb (Web Audio + Python batch renderer).
-7. **D-axis empirical calibration** — envelope analysis of synthesized audio measures x13–x16 (IOI coefficient of variation→x16, energy time-centroid→x13/τ, amplitude trend→x14, onset density→x15).
-8. **Accent layer** — UniDic (fugashi/unidic-lite) assigns accent-core positions; back-loaded words flagged as variants.
+### Epistemological Layering (Naïve Physics vs. Real Physics)
+- **Category A (Effort)** represents human perceptual and embodied movement quality — **Naïve Physics** (an observer-dependent cognitive model of motion).
+- **Categories B & C (Reynolds Fluid Dynamics, Acoustic Physics)** represent **Real Physics** (measurable fluid mechanics and acoustic signal parameters).
+- Because Category A and Categories B/C belong to distinct epistemological domains, they should not be treated as equivalent isotropic coordinates during distance computation without appropriate domain weighting.
 
 ---
 
-## 4. 主要な知見 / Key Findings
+## 3. Data Processing & Machine Learning Pipeline
 
-**JP:**
-- **x2×x8の相関は物理法則**：テンプレート分離後も相関が残存（r≈0.82）。「突発的事象は速く減衰する」現実の制約の反映であり、表記の癖ではない。
-- **x16とx9は独立**：拍のジッター(x16)と媒質の乱流(x9)は実測でほぼ直交（r≈−0.03）。Sieversのジッターを時間・空間で分担する設計の妥当性を実証。
-- **エンコーダ限界の検出**：温度のモデル適合度が突出して低い（R²≈0.20）。ただしこれは「温度を連想させる語彙が少ない」という意味ではない（ことこと・ぐつぐつ・ほんわか・ひんやり等、連想語は豊富）。**音が温度を直接担う音象徴ルールが手薄**という意味であり、温度を直接背負う資源は気音（「ほ」を挟むと熱くなる：ほんわか・ほっ・しゅぽっ）にほぼ限られ、重さの清濁ルール（トントン→ドンドン）のような汎用性を欠く。温度オノマトペの多くは運動（ことこと＝鍋）・硬さ（かちこち＝凍結）・気流（ひゅーひゅー）を経由した間接表現で、音ベクトルが温度を直接指していないため、音素→温度の直接予測は当たりにくい。一方「突発×持続（鐘の音）」は当初「届かない座標」と誤判定したが、複合（2ブロック合体）で到達可能と判明：「カッキーン」=〈カッ:突発〉+〈キーン:持続〉。後アクセントは振幅アクセント（前重心固定でよい）とピッチアクセント（表記不可視・方言依存）に分離して扱う。
-- **複合＝結合性（compositionality）**：オノマトペの複合は複合動詞（「汲み上げる」）と同じ言語の合成原理。中身は突発+持続（カッキーン）に限らず、突発+突発（がたぴし＝戸の連続音）、同時音の並置（しゅーごう＝風切り音＋エンジン低音）もある。現実での継時/同時関係は語に内在せず、適用される現実が決める（解釈は開いておく）。音素(きゃ=k+ゃ)→語根反復(きらきら)→ブロック連結(カッキーン)と同じ合成原理が入れ子で働く。**実装規則：複合は2ブロック（A+B）まで。3ブロック以上（A+B+C）は採らない。**
-- **補間と外挿**：生成語は潜在空間内側の補間であり、空間外への外挿ではない。
-
-**EN:**
-- **x2×x8 correlation is physical law**: it persists after template separation (r≈0.82), reflecting the real constraint that sudden events decay quickly — not an orthographic artifact.
-- **x16 and x9 are independent**: rhythmic jitter (x16) and medium turbulence (x9) are nearly orthogonal in measurement (r≈−0.03), validating the split-assignment of Sievers' jitter across time and space.
-- **Encoder-limit detection**: temperature shows markedly low model fit (R²≈0.20). This does *not* mean Japanese lacks temperature-evoking vocabulary (kotokoto, gutsugutsu, honwaka, hin'yari are plentiful). Rather, the **direct sound-symbolic rule** for temperature is thin: the resource that directly carries heat is largely limited to breath sounds (inserting "ho" makes things warm: honwaka, ho', shupo'), lacking the generality of the weight rule (tonton→donton). Most temperature onomatopoeia are indirect — via motion (kotokoto = a pot), hardness (kachikochi = freezing), or airflow (hyūhyū) — so the sound vector does not point at temperature directly, and phoneme→temperature prediction fits poorly. By contrast, "sudden-yet-sustained (bell tones)," initially misjudged as unreachable, turns out reachable via **composition (2-block compounding)**: "kakkīn" = ⟨ka' : sudden⟩ + ⟨kīn : sustained⟩. Back-loaded accent is split into amplitude accent (fix to front) and pitch accent (orthographically invisible, dialect-dependent).
-- **Composition = compositionality**: onomatopoeic compounding follows the same principle as compound verbs ("kumi-ageru" = scoop + raise). The pairing is not limited to sudden+sustained (kakkīn); it includes sudden+sudden (gatapishi = a door's repeated knocks) and juxtaposed simultaneous sounds (shūgō = air-cutting hiss + low engine roar). Whether the reality is sequential or simultaneous is not encoded in the word but decided by the referent (interpretation left open). The same compositional principle nests across levels: phoneme (kya = k+ya) → root reduplication (kirakira) → block concatenation (kakkīn). **Implementation rule: compounds are limited to two blocks (A+B); three or more (A+B+C) are not used.**
-- **Interpolation vs. extrapolation**: generated words are interpolations within the latent space, not extrapolations beyond it.
-
-### D軸の較正方針（現状と予定）
-D軸は現在、形態型からの一括ブートストラップ値で、離散に固着している。連続軸化のため、合成音エンベロープからの実測較正を行う：IOI変動係数→x₁₆、エネルギー時間重心→x₁₃、振幅トレンド→x₁₄、オンセット密度→x₁₅。単発語は形態priorを維持。x₁₆（拍の不規則さ）と x₉（媒質の粗さ）は独立（r=−0.16）。
+1. **Cleaning & Transduction**: Kana/Hangul $\rightarrow$ IPA transducers regenerate all IPA representations and verify originals against phonological databases; features undergo log-normalization, ordinal scaling, and sRGB $\rightarrow$ CIELAB (D65) color transformation.
+2. **Dimensionality Reduction & Analysis**: Principal Component Analysis (PCA) reveals effective rank $\approx 3$ (Impact, Mass, Temperature). A strong intrinsic physical correlation exists between $x_2$ Time and $x_8$ Decay ($r \approx 0.83$).
+3. **Morphological Template Separation**: Words are decomposed into structural morphological classes (reduplications, geminates, moraic nasals, -ri endings, etc.) to decouple root symbolism from structural template effects.
+4. **Phoneme Sub-dictionary & Feature Mapping**: Word roots are expanded into consonant, vowel, voicing, palatalization, and terminal features. Ridge regression models learn a forward mapping from phonological features to 16D vectors.
+5. **Sparse Region Detection & Inverse Generation**: Candidate forms are systematically sampled $\rightarrow$ forward vectors are predicted $\rightarrow$ coordinates farthest from existing lexical items are identified via $k$-NN distance $\rightarrow$ candidates are filtered by articulatory constraints $\rightarrow$ 56 novel synthetic onomatopoeia are created.
+6. **Deterministic Acoustic Synthesis**: A mapping engine translates 16D vectors directly into Web Audio / Python DSP synthesis parameters (ADSR, FM/subtractive waveforms, granular density, and reverberation).
+7. **Empirical D-Axis Calibration**: Audio envelope analysis calibrates phrase-level axes ($x_{13} - x_{16}$) using IOI variation coefficient ($x_{16}$), energy centroid ($x_{13}$), amplitude trend ($x_{14}$), and onset density ($x_{15}$).
+8. **Pitch Accent & Prosodic Alignment**: UniDic alignment assigns pitch accent nuclei and flags dialectal or back-loaded prosodic variants.
 
 ---
 
+## 4. Key Scientific Findings
 
-## 5. 理論的参照 / Theoretical References
-
-- 野口三千三 *原初生命体としての人間* — 身体感覚に基づくことばと動きの探求 / embodied exploration of word and movement.
-- Laban, R. — Movement Analysis, Effort theory (Weight/Time/Space/Flow).
-- 早川智彦・松井茂・渡邊淳司「オノマトペの触り心地マップ」日本バーチャルリアリティ学会論文誌 15(3), 487–490, 2010 — 起点となる触感マトリクス / originating tactile matrix.
-- TECHTILE (YCAM × 慶應義塾大学, 2011–2012) — 触覚と音響信号の相互変換ツールキット / haptic–audio signal toolkit.
-- Hamano, S. (1998) *The Sound-Symbolic System of Japanese* — 子音/母音/濁音の音象徴 / sound symbolism (voicing=mass, etc.).
-- Sievers, Polansky, Casey & Wheatley (2013) "Music and movement share a dynamic structure," PNAS 110(1):70–75 — 音楽と運動が共有する動的5パラメータ / shared dynamic parameters.
-- Russell, J. (1980) "A circumplex model of affect," JPSP 39(6):1161–1178 — 感情の2軸（快不快×覚醒）/ core-affect dimensions.
-- Dingemanse, M. (2012) — イデオフォンの含意階層 / implicational hierarchy of ideophones.
-- Ekman & Friesen (1969) — 表示規則（表出の文化依存）/ display rules.
-- UniDic — 国立国語研究所 / National Institute for Japanese Language and Linguistics (accent data).
-
-### 関連実装系譜 / Related implementation lineage
-CCL (Choreographic Coding Lab; The Forsythe Company / Motion Bank), RAM (Reactor for Awareness in Motion, YCAM) — 専門家向け振付・運動解析手法の「解放」という文脈に位置づく。
-Positioned within the "liberation" of specialist choreographic/movement-analysis methods via accessible AI tooling.
+- **Physical Law Constraint ($x_2 \times x_8$)**: The correlation between $x_2$ Time (impulse) and $x_8$ Decay ($r \approx 0.82$) remains strong even after removing morphological template effects. This reflects the physical law that sudden impact events decay rapidly.
+- **Orthogonality of Temporal Jitter ($x_{16}$) and Spatial Turbulence ($x_9$)**: Rhythmic timing jitter ($x_{16}$) and medium turbulence ($x_9$) are nearly orthogonal in measurement ($r \approx -0.03$), validating the separation of temporal vs. spatial micro-irregularities.
+- **Encoder Capacity & Direct Sound Symbolism Limits**: Temperature prediction shows lower fit ($R^2 \approx 0.20$). While Japanese and Korean possess rich thermal-evoking words (*kotokoto*, *hin'yari*, *gutsugutsu*), direct phonetic sound symbolism for heat is limited primarily to aspirated airflow / breath sounds (e.g., inserting *ho-*). Most thermal terms convey temperature indirectly through motion, acoustic resonance, or fluid state.
+- **Compositionality via Compounding**: Compound onomatopoeia operate under syntactic compositionality (similar to compound verbs). Compound words combine distinct acoustic blocks (e.g., *kakkīn* = $\langle$*ka'*: sudden impact$\rangle$ + $\langle$*kīn*: sustained resonance$\rangle$). In this pipeline, compounding is bounded to 2-block combinations ($A+B$).
 
 ---
 
-## 6. 制作 / Authorship
+## 5. Theoretical References
 
-- 第1辞書 / First dictionary: Richi Owaki + Gemini (2025, 708 words)
-- 設計見直し・本版 / Redesign (this version): Richi Owaki + Claude (2026)
-- エフォート理論の機構論的再定式化を別系統と並行 / mechanistic reformulation of Effort theory developed in parallel.
-- 今後 / Roadmap: 外国語（韓国語・声調言語）の拡張 / extension to other languages (Korean, tonal languages).
+- **Noguchi, M.** — *Human Being as a Primordial Life Form*: Embodied language and movement exploration.
+- **Laban, R.** — *Movement Analysis*: Effort Theory (Weight, Time, Space, Flow).
+- **Hayakawa, T., Matsui, S., & Watanabe, J. (2010)** — "Tactile Map of Onomatopoeia," *Transactions of the Virtual Reality Society of Japan*, 15(3), 487–490.
+- **TECHTILE (YCAM & Keio University, 2011–2012)** — Haptic-audio cross-modal transformation toolkit.
+- **Hamano, S. (1998)** — *The Sound-Symbolic System of Japanese*, CSLI Publications.
+- **Sievers, B., Polansky, L., Casey, M., & Wheatley, T. (2013)** — "Music and movement share a dynamic structure that supports universal expressions of emotion," *PNAS*, 110(1), 70–75.
+- **Russell, J. (1980)** — "A circumplex model of affect," *JPSP*, 39(6), 1161–1178.
+- **Dingemanse, M. (2012)** — Implicational hierarchy of ideophones.
+- **Choreographic Lineage**: CCL (Choreographic Coding Lab; The Forsythe Company / Motion Bank), RAM (Reactor for Awareness in Motion, YCAM).
+
+---
+
+## 6. Authorship & Project Evolution
+
+- **Initial Dictionary**: Richi Owaki + Gemini (2025, 708 words)
+- **Multilingual Expansion & Redesign (v3)**: Richi Owaki + Claude (2026) — Japanese (2,061 words) and Korean (1,184 words) dictionaries, 16-axis ML vectorization, etymological root origin tags (`stem_bit`), and data-compressed bitmask versions.

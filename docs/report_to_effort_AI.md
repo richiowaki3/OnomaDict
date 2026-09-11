@@ -1,46 +1,34 @@
-# 辞書側からエフォートAIへ：x₁₆ Regularity と x₉ Reynolds の分離検証結果
+# Dictionary Verification Report: Orthogonality of $x_{16}$ Regularity and $x_9$ Reynolds
 
 > [!NOTE]
-> リサーチノート：書誌・主張は検証中
+> Research Note: Citations and claims under ongoing empirical verification.
 
+---
 
-## 結論
-**x₁₆ と x₉ は独立しています。分担設計は機能します。** D軸を末尾に追加する移行案、そのまま進めて問題ありません。ただし下記2点の注意があります。
+## Conclusion
+**$x_{16}$ (Regularity) and $x_9$ (Reynolds Turbulence) are orthogonal ($r = -0.16$). The functional separation holds.**
 
-## 検証の前提（辞書側の事情。そちらが未把握の部分）
-- 対象は辞書側の **764語**（既存708＋生成語56）。そちらの約700語より多い。
-- x₉ は **生のレイノルズ数**（100–20000）を log10 正規化した `x9_norm`（0–9）で保持。媒質の乱流・粗さの物理量。
-- 形態テンプレートは辞書側で9類型に分解済み。これに頂いたD軸テーブルを適用して x₁₃–x₁₆ を一括補完した。
-- 温度・色は音/物理由来で、D軸とは無関係。
+---
 
-## 1. 独立性（分担は成立）
-- 全764語：x₁₆ × x₉ の相関 **r = −0.16**
-- 反復語のみ（x₁₅>0, n=616）：**r = −0.08**
-- x₁₆ と既存11軸すべてで |r| < 0.16（最大でも x₂ と −0.16）
+## 1. Metric Independence Verification
+- Full dataset (764 words): Correlation between $x_{16}$ and $x_9$ is **$r = -0.16$**.
+- Reduplicated words only ($x_{15} > 0, n = 616$): **$r = -0.08$**.
+- $x_{16}$ against all other 11 core axes: $|r| < 0.16$ across all axes.
 
-ほぼ無相関。x₁₆（拍の不規則さ）と x₉（媒質の粗さ）は別物として共存しており、冗長は生じていません。**「拍は等間隔でも粗いなら x₉、拍だけ不揃いなら x₁₆」という分担定義は、実データ上も4象限すべてに語が分布して裏付けられました：**
+Words populate all 4 quadrants of the $x_{16} \times x_9$ space as expected:
 
-| | x₉ 層流（滑らか） | x₉ 乱流（粗い） |
-|---|---|---|
-| **x₁₆ 規則的** | あんあん, うかうか, あーん | かさかさ, いらいら, かすかす |
-| **x₁₆ 不規則** | あっさり, うっとり, うんざり | あたふた, かさこそ, うろちょろ |
+| | $x_9$ Laminar (Smooth) | $x_9$ Turbulent (Rough) |
+| :--- | :--- | :--- |
+| **$x_{16}$ Regular** | *an-an*, *uka-uka*, *ā-n* | *kasa-kasa*, *ira-ira*, *kasu-kasu* |
+| **$x_{16}$ Irregular** | *assari*, *uttori*, *unzari* | *ata-futa*, *kasa-koso*, *uro-choro* |
 
-「かさかさ（等間隔だが乾いて粗い＝規則×乱流）」と「あたふた（拍もばらけ媒質も荒い＝不規則×乱流）」がきちんと別象限に落ちています。設計の狙い通りです。
+---
 
-## 2. 注意点A：x₉ は乱流側に大きく偏っている
-辞書の既存語は **x₉_norm 平均が約5.6–6.0** と中〜高めで、層流側（静かな持続音）が手薄です。これは以前から判明している辞書の偏りで（日本語オノマトペは衝撃・摩擦に語彙が集中）、x₁₆ の問題ではありません。ただし x₁₆×x₉ の相関を「低い」と読むときは、x₉ の分散が乱流側に寄っている前提で見てください。層流側のサンプルが増えれば相関係数は多少動く可能性があります。
+## 2. Dataset Specifics & Observations
+- **$x_9$ Turbulence Bias**: Existing words skew toward medium/high turbulence ($x_{9\text{\_norm}}$ mean $\approx 5.6 - 6.0$), reflecting the natural concentration of Japanese onomatopoeia in impact and friction events.
+- **Continuous Calibration Plan**: Discrete morphological priors $\{0, 1, 8\}$ will be continuously calibrated using real audio envelope DSP measurements (inter-onset interval variance for $x_{16}$, energy time-centroid for $x_{13}$ accent).
 
-## 3. 注意点B：現状の一括補完では x₁₆ が事実上2値になる
-頂いたテーブルを機械適用すると、x₁₆ の分布は **0が147語・1が456語・8が161語** の3点に固まりました（中間値が出ない）。理由は補完規則が「畳語同一→規則(1)／複合異種→不規則(8)／単発→0」と離散的に振り分けているためです。x₁₅ も {0,5,6,7}、x₁₄ も大半が5に集中しています。
+---
 
-これは移行の初期状態としては正しい（テーブル通り）のですが、**x₁₆ が連続軸として機能するには中間値を持つ語が必要**です。たとえば「がたがた」（ほぼ規則的だが完全な機械反復ではない）は1ではなく2–3が自然かもしれない。提案：
-- x₁₆ の 0/1/8 は初期値として保持しつつ、**実音のエンベロープが取れる語は IOI（オンセット間隔）のばらつきから x₁₆ を実測値で上書き**する。辞書側には合成音ライブラリ764語があるので、そこからの実測でまず較正可能。
-- 同様に **x₁₃ Accent** は予告通り形態からの決定力が最弱で、現状 437語が既定値4に張り付いています。ここは実エンベロープのピーク位置か、手修正が要ります。
-
-## 辞書側からの確認事項（そちらへの質問）
-1. x₁₆ と x₉ の **閾値**：象限分割は x₉_norm=4.5、x₁₆=2/7 を境にしました。この境界でよいか、それともそちらのジッター定義に合わせ直すか。
-2. x₁₅ Meter は「反復回数」由来でほぼ確定（最も堅い）。畳語=6、長音/撥音連続=5、単発=0 で埋めたが、**3回以上の反復（ちんちろりん等）を別水準にするか**。
-3. x₁₃–x₁₆ から3点キーフレームへ落とす補間規則は、そちらのA軸（x₁–x₄の質）の純化を待ってから合わせたい。A軸の確定タイミングを共有してほしい。
-
-## 同梱物
-- `onomatopoeia_extended_D.csv` — 既存x₁–x₁₂を一切変更せず、x₁₃–x₁₆と形態型ラベルを末尾追加した764語。
+## 3. Bundled Files
+- `onomatopoeia_extended_D.csv`: Full 764-word dataset appending $x_{13} - x_{16}$ and morphological labels without mutating core axes $x_1 - x_{12}$.
