@@ -1,6 +1,6 @@
 # Unexplored Onomatopoeia Dictionary (JP & KR)
 
-A cross-lingual multidimensional vector dictionary of Japanese (JP: 2,061 words) and Korean (KR: 1,184 words) onomatopoeia, formalized across physical, sensory, motion, rhythm, accent, and sound-symbolic metadata.
+A cross-lingual multidimensional vector dictionary of Japanese (JP: 2,061 words) and Korean (KR: 5,050 words) onomatopoeia, formalized across physical, sensory, motion, rhythm, accent, and sound-symbolic metadata.
 
 Designed as a conversion hub across choreography, acoustic synthesis, computer graphics, motion design, lighting, and natural language processing.
 
@@ -19,7 +19,7 @@ data/
 │   ├── onomatopoeia_dictionary_jp.json         ← Full Version JSON
 │   ├── onomatopoeia_dictionary_jp_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
 │   └── onomatopoeia_dictionary_jp_compact.json ← Data-Compressed Version JSON
-└── kr/  (Korean Onomatopoeia Dictionary - 1,184 entries)
+└── kr/  (Korean Onomatopoeia Dictionary - 5,050 entries)
     ├── onomatopoeia_dictionary_kr.csv          ← Full Version (English meanings & category names)
     ├── onomatopoeia_dictionary_kr.json         ← Full Version JSON
     ├── onomatopoeia_dictionary_kr_compact.csv  ← Data-Compressed Version (Bitmask numbers, ultra-lightweight)
@@ -85,7 +85,7 @@ data/
 - Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp.json
 - Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/jp/onomatopoeia_dictionary_jp_compact.json
 
-### Korean (KR: 1,184 entries)
+### Korean (KR: 5,050 entries)
 - Full JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr.json
 - Compact JSON: https://raw.githubusercontent.com/richiowaki3/OnomaDict/main/data/kr/onomatopoeia_dictionary_kr_compact.json
 
