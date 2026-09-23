@@ -103,6 +103,28 @@ data/
 
 ---
 
+## Procedural Audio Synthesis Engine
+
+A pure Python, lightweight procedural synthesis engine (`src/onomato_synth.py`) is included to generate real-time onomatopoeia audio from dictionary entries without external WAV dependencies.
+
+It cross-morphs **Human Vocal Tract Formants (F1, F2)** with **Physical Impact Resonators (Sub-Kick, Modal Decay, Noise)**:
+
+```python
+from src.onomato_synth import OnomatoSynthesizer
+
+synth = OnomatoSynthesizer(sample_rate=44100)
+
+# Generate audio arrays directly (float32 numpy array, -1.0 to 1.0)
+audio_impact = synth.synthesize("ドカン", duration=0.6, vocalness=0.1) # Heavy physical shockwave
+audio_crisp  = synth.synthesize("カツン", duration=0.3, vocalness=0.2) # Crisp modal click
+audio_voice  = synth.synthesize("オギャー", duration=0.8, vocalness=0.8) # Vocal state
+
+# Save to WAV
+synth.save_wav("dokan.wav", audio_impact)
+```
+
+---
+
 ## License
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (Creative Commons Attribution 4.0 International).
 Feel free to use, modify, and redistribute. Please credit Richi Owaki and Unexplored Onomatopoeia Dictionary.
